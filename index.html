@@ -37,6 +37,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <!-- End Style -->
+    <!--Start Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!--End Slider -->
     <title>Reach</title>
   </head>
   <body>
@@ -83,7 +89,7 @@
       </div>
     </nav>
     <!-- End Navbar -->
-    <div class="container">
+    <div class="pageContainer">
       <!-- Start Home Section -->
       <div
         class="home section d-flex justify-content-between align-items-center"
@@ -91,14 +97,14 @@
       >
         <div class="vision">
           <div class="bigText">
-            Your Vision, Our Mission: Advertising That Works
+            Our ideas are the key to your digital success.
           </div>
           <div class="smallText ms-2">
-            We create impactful advertising that captivates and converts. Let’s
-            elevate your brand together.
+            We create integrated solutions in digital marketing and custom
+            programming to elevate your business in the digital world
           </div>
           <button class="ourServicesBtn mt-5">
-            <a href="#services">Our Services</a>
+            <a href="#services">Explore Our Services</a>
           </button>
         </div>
         <div class="visionImage"></div>
@@ -123,91 +129,132 @@
       </div>
       <!-- End About Us Section -->
       <!-- Start Services Section -->
-      <div class="services section pt-5" id="services">
-        <div class="row">
-          <div class="col-16 col-md-6 col-lg-4">
-            <div class="icon">
-              <img src="./images/mediaBuyingFeature.svg" alt="Media Buying" />
+      <div class="services section" id="services">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="icon">
+                <img src="./images/SEO.png" alt="Media Buying" />
+              </div>
+              <div class="title fw-bold">Search Engine Optimization</div>
+              <div class="description">
+                Enhance your site's ranking in search results by using
+                comprehensive SEO strategies, from utilizing effective keywords
+                to optimizing articles and inter-page links, ensuring that your
+                store appears on the first pages.
+              </div>
             </div>
-            <div class="title fw-bold">Media Buying</div>
-            <div class="description">
-              Create a memorable and impactful brand identity. We develop unique
-              brand strategies, logos, and messaging that distinguish your
-              business and resonate with your audience.
+            <div class="swiper-slide">
+              <div class="icon">
+                <img src="./images/SEO.png" alt="Media Buying" />
+              </div>
+              <div class="title fw-bold">Mobile App Design And Development</div>
+              <div class="description">
+                We offer mobile app design and development services that combine
+                creativity and advanced technologies, with a focus on user
+                experience and ease of use.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon">
+                <img src="./images/SEO.png" alt="Media Buying" />
+              </div>
+              <div class="title fw-bold">Online Store Management</div>
+              <div class="description">
+                Amid the growing demand for e-commerce, whether you offer
+                products or services, creating a comprehensive online store is
+                the solution to achieving your goals and increasing your sales.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon">
+                <img src="./images/SEO.png" alt="Media Buying" />
+              </div>
+              <div class="title fw-bold">Creating A Brand Identity</div>
+              <div class="description">
+                A brand identity is not just a logo or colors; it is the
+                essential element that distinguishes your brand from others and
+                leaves a lasting impression in the minds of customers.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon">
+                <img src="./images/SEO.png" alt="Media Buying" />
+              </div>
+              <div class="title fw-bold">Advertising Campaign Management</div>
+              <div class="description">
+                Paid advertising campaigns precisely target customers using
+                various strategies, helping to increase sales and convert
+                visitors into actual customers.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon">
+                <img src="./images/SEO.png" alt="Media Buying" />
+              </div>
+              <div class="title fw-bold">Content Writing</div>
+              <div class="description">
+                We provide content writing services that enhance your brand and
+                achieve outstanding results, because we believe in the
+                importance of content in achieving your marketing goals.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon">
+                <img src="./images/SEO.png" alt="Media Buying" />
+              </div>
+              <div class="title fw-bold">Website Design</div>
+              <div class="description">
+                We offer you professional website design that aligns with your
+                brand, ensuring a distinguished user experience and effectively
+                meeting your clients' needs.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon">
+                <img src="./images/SEO.png" alt="Media Buying" />
+              </div>
+              <div class="title fw-bold">Social Media Management</div>
+              <div class="description">
+                Social media management requires careful planning and research
+                to reach the target customer. We start by studying the market to
+                understand trends, then develop a content plan and an effective
+                publishing strategy.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon">
+                <img src="./images/SEO.png" alt="Media Buying" />
+              </div>
+              <div class="title fw-bold">Graphic Design</div>
+              <div class="description">
+                Transform your ideas into unique designs to create a visual
+                experience that reflects your brand's identity.
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon">
+                <img src="./images/SEO.png" alt="Media Buying" />
+              </div>
+              <div class="title fw-bold">Motion Graphics Video Production</div>
+              <div class="description">
+                We create professional motion graphics videos that enhance your
+                advertising message, grab attention, and leave a lasting
+                impression.
+              </div>
             </div>
           </div>
-          <div class="col-16 col-md-6 col-lg-4">
-            <div class="icon">
-              <img
-                src="./images/contentCreationFeature.svg"
-                alt="Content Creation"
-              />
-            </div>
-            <div class="title fw-bold">Content Creation</div>
-            <div class="description">
-              Engage and inspire with high-quality content. Our team produces
-              compelling visual and written content, including videos, graphics,
-              blogs, and social media posts that tell your brand's story.
-            </div>
-          </div>
-          <div class="col-16 col-md-6 col-lg-4">
-            <div class="icon">
-              <img
-                src="./images/creativeCompagneFeature.svg"
-                alt="Creative Compaigns"
-              />
-            </div>
-            <div class="title fw-bold">Creative Compaigns</div>
-            <div class="description">
-              Stand out with innovative and captivating campaigns. We
-              conceptualize and execute multi-channel advertising campaigns that
-              grab attention and leave a lasting impression.
-            </div>
-          </div>
-          <div class="col-16 col-md-6 col-lg-4">
-            <div class="icon">
-              <img src="./images/mediaBuyingFeature.svg" alt="Media Buying" />
-            </div>
-            <div class="title fw-bold">Media Buying</div>
-            <div class="description">
-              Create a memorable and impactful brand identity. We develop unique
-              brand strategies, logos, and messaging that distinguish your
-              business and resonate with your audience.
-            </div>
-          </div>
-          <div class="col-16 col-md-6 col-lg-4">
-            <div class="icon">
-              <img
-                src="./images/contentCreationFeature.svg"
-                alt="Content Creation"
-              />
-            </div>
-            <div class="title fw-bold">Content Creation</div>
-            <div class="description">
-              Engage and inspire with high-quality content. Our team produces
-              compelling visual and written content, including videos, graphics,
-              blogs, and social media posts that tell your brand's story.
-            </div>
-          </div>
-          <div class="col-16 col-md-6 col-lg-4">
-            <div class="icon">
-              <img
-                src="./images/creativeCompagneFeature.svg"
-                alt="Creative Compaigns"
-              />
-            </div>
-            <div class="title fw-bold">Creative Compaigns</div>
-            <div class="description">
-              Stand out with innovative and captivating campaigns. We
-              conceptualize and execute multi-channel advertising campaigns that
-              grab attention and leave a lasting impression.
-            </div>
-          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
       <!-- End Services Section -->
     </div>
     <footer id="contactUs"></footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/40ecf97f4e.js"

@@ -22,6 +22,9 @@ a {
 ul li {
   list-style-type: none;
 }
+/* .pageContainer {
+  max-width: 100%;
+} */
 /* Start Navbar */
 .navbar {
   background-image: url("../images/navBackground.png");
@@ -56,6 +59,8 @@ ul li {
 /* Start Section Seperation */
 .section {
   min-height: 700px;
+  max-width: 100%;
+  padding: 0 60px;
   position: relative;
 }
 .section::before {
@@ -92,7 +97,7 @@ ul li {
   font-size: 1rem;
   border: none;
   padding: 15px 40px;
-  border-radius: 50px;
+  border-radius: 6px;
 }
 .ourServicesBtn a {
   text-decoration: none;
@@ -112,6 +117,9 @@ ul li {
 }
 
 /* Start About Us Section */
+.section.aboutUs {
+  background-color: #f580204d;
+}
 .aboutBigText {
   font-weight: 400;
   position: relative;
@@ -146,13 +154,33 @@ ul li {
 }
 
 /* Start Services Section */
-.services .col-16 {
-  margin-bottom: 30px;
+.section.services {
+  padding: 0;
+}
+.swiper {
+  width: 100%;
+  padding: 50px !important;
+}
+.swiper-slide {
+  border: 0.5px solid #00000080;
+  border-radius: 6px;
+  padding: 10px;
+  height: auto !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px !important;
+  font-weight: bold;
 }
 .services .icon {
-  width: 6.25rem;
+  width: 90%;
+  max-width: 350px;
   aspect-ratio: 1 / 1;
-  margin-bottom: 20px;
+  margin: auto auto 20px auto;
 }
 .services .icon img {
   width: 100%;
