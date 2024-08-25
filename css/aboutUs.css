@@ -1,0 +1,115 @@
+img {
+  max-width: 100%;
+}
+.aboutUsFirstSec {
+  padding-bottom: 200px !important;
+}
+.aboutUsPage::before {
+  content: "";
+  position: absolute;
+  width: 213.81px;
+  height: 362px;
+  background-image: url("../images/shape_82.png");
+  background-size: cover;
+}
+.aboutUsPage::after {
+  content: "";
+  position: absolute;
+  width: 212.56px;
+  height: 160.81px;
+  background-image: url("../images/Group 59.png");
+  background-size: cover;
+  right: 1%;
+  top: 10%;
+}
+.figure3 {
+  width: 305.78px;
+  right: 0;
+  bottom: 70px;
+  z-index: -1;
+}
+.figure4 {
+  width: 189px;
+  height: 124.65px;
+  left: 0;
+  bottom: 15%;
+  z-index: -1;
+}
+.figure5 {
+  left: -100px;
+  top: 100px;
+}
+@media (max-width: 1300px) {
+  .aboutUsPage::after {
+    width: 132.18px;
+    height: 100px;
+  }
+  .figure4 {
+    width: 151.62px;
+    height: 100px;
+  }
+  .aboutUsPage::before {
+    width: 193.81px;
+    height: 328px;
+  }
+  .figure3 {
+    width: 275.78px;
+  }
+  .figure5 {
+    left: -50px !important;
+  }
+  .firstHeader img {
+    width: 260px !important;
+  }
+}
+.aboutUsFirstSec {
+  width: 80%;
+  position: relative;
+}
+.firstTitle h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.firstText {
+  margin-bottom: 100px;
+  position: relative;
+}
+.firstText::before {
+  content: "";
+  position: absolute;
+  width: 122.19px;
+  height: 19.5px;
+  background-image: url("../images/shape_57.png");
+  background-size: cover;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Second Section */
+.ourVision {
+  gap: 100px;
+}
+.secImg {
+  width: 550px;
+  aspect-ratio: 1 / 1;
+}
+.secImg img {
+  width: 100%;
+}
+/* .secImg {
+  background-color: #ffd7b6;
+  width: 550px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.textHead {
+  color: #f58020;
+  font-size: 40px;
+  font-weight: 700;
+}
+.textDesc {
+  font-size: 20px;
+}
