@@ -1,0 +1,274 @@
+.visualIdentity {
+  background-color: #ffa1544d;
+  padding: 80px 0;
+}
+.visualIdentityDesc .title,
+.visualIdentityStepsTitle,
+.visualIdentityBenefitsTitle,
+.reachHelpQuestion {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 100px;
+  position: relative;
+}
+.visualIdentityDesc .title::before {
+  content: "";
+  position: absolute;
+  width: 122.19px;
+  height: 19.5px;
+  background-image: url("../images/shape_57.png");
+  background-size: cover;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.visualIdentityDesc .question {
+  color: #f58020;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+}
+.visualIdentityDesc .desc {
+  padding: 0 100px;
+  position: relative;
+}
+.visualIdentityDesc .desc::before {
+  content: "";
+  position: absolute;
+  width: 96.51px;
+  height: 88.73px;
+  background-image: url("../images/right.png");
+  background-size: cover;
+  right: -40px;
+  top: -20px;
+}
+.visualIdentityDesc .desc::after {
+  content: "";
+  position: absolute;
+  width: 96.51px;
+  height: 88.73px;
+  background-image: url("../images/left.png");
+  background-size: cover;
+  left: -40px;
+  top: -20px;
+}
+@media (max-width: 767px) {
+  .visualIdentityDesc .desc::before,
+  .visualIdentityDesc .desc::after {
+    width: 63.51px;
+    height: 58.73px;
+    top: 50%;
+    transform: translateY(-100%);
+  }
+  .visualIdentityDesc .desc::before {
+    right: 0;
+  }
+  .visualIdentityDesc .desc::after {
+    left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .visualIdentityDesc .desc {
+    padding: 0;
+  }
+  .visualIdentityDesc .desc::before,
+  .visualIdentityDesc .desc::after {
+    display: none;
+  }
+}
+/* Types Of Identity */
+.typeOfIdentitiy,
+.visualIdentitySteps,
+.visualIdentityBenefits,
+.reachHelp {
+  padding: 80px 0;
+}
+.typeOfIdentitiy .text .title {
+  color: #f58020;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.typeOfIdentitiy .text .types .type .typeTitle {
+  font-weight: 700;
+  font-size: 20px;
+}
+.typeOfIdentityImg {
+  min-width: 50%;
+  text-align: center;
+}
+.typeOfIdentityImg img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .typeOfIdentitiy .text .title {
+    font-size: 32px;
+  }
+  .typeOfIdentitiy .text .types .type .typeTitle {
+    font-size: 18px;
+  }
+  .typeOfIdentitiy .text .types .type .typeDesc {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .typeOfIdentityImg {
+    display: none;
+  }
+}
+/* Start Visual Identity */
+.visualIdentityStepsTitle {
+  margin-bottom: 20px;
+}
+.steps .step {
+  border: 1px solid #f580204d;
+  border-radius: 8px;
+  padding: 30px 10px;
+}
+.steps .step .stepNumber {
+  color: #f58020;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.steps .step .stepDesc {
+  font-size: 20px;
+}
+
+/* Visual Identity Benefits */
+.visualIdentityBenefitsTitle {
+  margin: auto;
+  margin-bottom: 70px;
+}
+.visualIdentityBenefitsTitle::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/shape_66.png");
+  background-size: cover;
+  width: 76.11px;
+  height: 68.47px;
+  left: 50px;
+  top: -5px;
+}
+.visualIdentityBenefitsTitle::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/shape_66.png");
+  background-size: cover;
+  width: 76.11px;
+  height: 68.47px;
+  right: 50px;
+  top: -5px;
+}
+.visualIdentityBenefits ul li {
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+@media (max-width: 1200px) {
+  .visualIdentityBenefitsTitle {
+    width: 80%;
+  }
+  .visualIdentityBenefitsTitle::before {
+    left: -80px;
+  }
+  .visualIdentityBenefitsTitle::after {
+    right: -80px;
+  }
+  .visualIdentityBenefits ul li {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .visualIdentityBenefitsTitle::before,
+  .visualIdentityBenefitsTitle::after {
+    width: 64.11px;
+    height: 57.47px;
+  }
+  .visualIdentityBenefitsTitle::before {
+    left: -60px;
+  }
+  .visualIdentityBenefitsTitle::after {
+    right: -60px;
+  }
+}
+@media (max-width: 576px) {
+  .visualIdentityBenefitsTitle {
+    width: 100%;
+  }
+  .visualIdentityBenefitsTitle::before,
+  .visualIdentityBenefitsTitle::after {
+    display: none;
+  }
+  .visualIdentityBenefits ul li {
+    text-align: center;
+  }
+}
+
+/* Start Visual Identity React Help */
+.reachHelpQuestion {
+  margin-bottom: 10px;
+}
+.reachHelpintro {
+  font-weight: 500;
+}
+.reachHelp ul li {
+  margin-bottom: 30px;
+}
+.reachHelpFigure {
+  width: 320px;
+  margin: auto;
+}
+.reachHelpFigure img {
+  width: 100%;
+}
+.reachHelp ul {
+  width: 80%;
+  margin: auto;
+}
+.reachHelp ul::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/reachHelpRight.png");
+  background-size: cover;
+  width: 39.58px;
+  height: 89px;
+  right: -49.58px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.reachHelp ul::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/reachHelpRight.png");
+  background-size: cover;
+  width: 39.58px;
+  height: 89px;
+  left: -49.58px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+  .reachHelpFigure {
+    width: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .reachHelp ul::after,
+  .reachHelp ul::before {
+    display: none;
+  }
+}
+
+/* Compined media queries */
+@media (max-width: 767px) {
+  .visualIdentityDesc .title,
+  .visualIdentityStepsTitle,
+  .visualIdentityBenefitsTitle,
+  .reachHelpQuestion {
+    font-size: 28px;
+  }
+  .steps .step .stepNumber {
+    font-size: 32px;
+  }
+}

@@ -112,7 +112,7 @@ ul li {
 }
 
 /* Start Section Seperation */
-.section {
+.section:not(.section.services) {
   min-height: 700px;
   max-width: 100%;
   padding: 0 60px;
@@ -249,9 +249,20 @@ ul li {
   font-size: 1.128rem;
   color: var(--fontSecColor);
 }
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
+  .services .icon {
+    max-width: 180px;
+  }
   .services .title {
-    font-size: 1.75rem;
+    font-size: 1.55rem;
+  }
+}
+@media (max-width: 767px) {
+  .services .title {
+    font-size: 1.35rem;
+  }
+  .services .description {
+    font-size: 1rem;
   }
 }
 
@@ -290,7 +301,7 @@ footer {
   justify-content: space-between;
 }
 .footerServices ul li {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
