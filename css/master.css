@@ -249,7 +249,7 @@ ul li {
   font-size: 1.128rem;
   color: var(--fontSecColor);
 }
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
   .services .icon {
     max-width: 180px;
   }

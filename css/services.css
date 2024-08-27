@@ -1,3 +1,6 @@
+* {
+  font-family: "Cairo", sans-serif;
+}
 .visualIdentity {
   background-color: #ffa1544d;
   padding: 80px 0;
@@ -53,7 +56,20 @@
   left: -40px;
   top: -20px;
 }
-@media (max-width: 767px) {
+.visualIdentityDesc .desc a,
+.reachHelp .reachHelpintro a {
+  color: #f58020;
+  text-decoration: underline;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .visualIdentityDesc .desc::before {
+    right: -18px;
+  }
+  .visualIdentityDesc .desc::after {
+    left: -18px;
+  }
+}
+@media (max-width: 991px) {
   .visualIdentityDesc .desc::before,
   .visualIdentityDesc .desc::after {
     width: 63.51px;
@@ -125,6 +141,7 @@
   border: 1px solid #f580204d;
   border-radius: 8px;
   padding: 30px 10px;
+  height: 100%;
 }
 .steps .step .stepNumber {
   color: #f58020;
@@ -231,7 +248,7 @@
   position: absolute;
   background-image: url("../images/reachHelpRight.png");
   background-size: cover;
-  width: 39.58px;
+  width: 39px;
   height: 89px;
   right: -49.58px;
   top: 50%;
@@ -240,7 +257,7 @@
 .reachHelp ul::after {
   content: "";
   position: absolute;
-  background-image: url("../images/reachHelpRight.png");
+  background-image: url("../images/reachHelpLeft.png");
   background-size: cover;
   width: 39.58px;
   height: 89px;
