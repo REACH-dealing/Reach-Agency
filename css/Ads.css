@@ -1,0 +1,282 @@
+* {
+  font-family: "Cairo", sans-serif;
+}
+.visualIdentity {
+  background-color: #ffa1544d;
+  padding: 80px 0;
+}
+.visualIdentityDesc .title,
+.visualIdentityStepsTitle,
+.visualIdentityBenefitsTitle,
+.reachHelpQuestion {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 100px;
+  position: relative;
+}
+.visualIdentityDesc .title::before {
+  content: "";
+  position: absolute;
+  width: 122.19px;
+  height: 19.5px;
+  background-image: url("../images/shape_57.png");
+  background-size: cover;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.visualIdentityDesc .question {
+  color: #f58020;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+}
+.visualIdentityDesc .desc {
+  padding: 0 100px;
+  position: relative;
+}
+.visualIdentityDesc .desc::before {
+  content: "";
+  position: absolute;
+  width: 96.51px;
+  height: 88.73px;
+  background-image: url("../images/right.png");
+  background-size: cover;
+  right: -40px;
+  top: -20px;
+}
+.visualIdentityDesc .desc::after {
+  content: "";
+  position: absolute;
+  width: 96.51px;
+  height: 88.73px;
+  background-image: url("../images/left.png");
+  background-size: cover;
+  left: -40px;
+  top: -20px;
+}
+.visualIdentityDesc .desc a,
+.reachHelp .reachHelpintro a {
+  color: #f58020;
+  text-decoration: underline;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .visualIdentityDesc .desc::before {
+    right: -18px;
+  }
+  .visualIdentityDesc .desc::after {
+    left: -18px;
+  }
+}
+@media (max-width: 991px) {
+  .visualIdentityDesc .desc::before,
+  .visualIdentityDesc .desc::after {
+    width: 63.51px;
+    height: 58.73px;
+    top: 50%;
+    transform: translateY(-100%);
+  }
+  .visualIdentityDesc .desc::before {
+    right: 0;
+  }
+  .visualIdentityDesc .desc::after {
+    left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .visualIdentityDesc .desc {
+    padding: 0;
+  }
+  .visualIdentityDesc .desc::before,
+  .visualIdentityDesc .desc::after {
+    display: none;
+  }
+}
+/* Types Of Identity */
+.typeOfIdentitiy,
+.visualIdentitySteps,
+.visualIdentityBenefits,
+.reachHelp {
+  padding: 80px 0;
+}
+.typeOfIdentitiy .text .title {
+  color: #f58020;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.typeOfIdentitiy .text .types .type .typeTitle {
+  font-weight: 700;
+  font-size: 20px;
+}
+.typeOfIdentityImg {
+  min-width: 50%;
+  text-align: center;
+}
+.typeOfIdentityImg img {
+  width: 100%;
+  max-width: 500px;
+}
+@media (max-width: 991px) {
+  .typeOfIdentitiy .text .title {
+    font-size: 32px;
+  }
+  .typeOfIdentitiy .text .types .type .typeTitle {
+    font-size: 18px;
+  }
+  .typeOfIdentitiy .text .types .type .typeDesc {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .typeOfIdentityImg {
+    display: none;
+  }
+}
+/* Start Visual Identity */
+.visualIdentityStepsTitle {
+  margin-bottom: 20px;
+}
+.steps .step {
+  border: 1px solid #f580204d;
+  border-radius: 8px;
+  padding: 30px 10px;
+  height: 100%;
+}
+.steps .step .stepNumber {
+  color: #f58020;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.steps .step .stepDesc {
+  font-size: 20px;
+}
+
+/* Visual Identity Benefits */
+.visualIdentityBenefitsTitle {
+  margin: auto;
+  margin-bottom: 70px;
+}
+.visualIdentityBenefits ul li {
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+.underLine {
+  font-size: 24px;
+  position: relative;
+}
+.underLine::before {
+  content: "";
+  position: absolute;
+  width: 194px;
+  height: 27px;
+  background-image: url("../images/Underline_06.png");
+  background-size: contain;
+  bottom: -35px;
+  left: 50%;
+  translate: -50% 0;
+}
+@media (max-width: 1200px) {
+  .visualIdentityBenefitsTitle {
+    width: 80%;
+  }
+  .visualIdentityBenefits ul li {
+    margin-left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .visualIdentityBenefitsTitle {
+    width: 100%;
+  }
+}
+
+/* Start Visual Identity React Help */
+.reachHelpQuestion {
+  margin-bottom: 10px;
+}
+.reachHelpintro {
+  font-weight: 500;
+}
+.reachHelp ul li {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.reachHelpFigure {
+  width: 320px;
+  margin: auto;
+}
+.reachHelpFigure img {
+  width: 100%;
+}
+.numbering {
+  position: relative;
+  display: inline-block;
+}
+.numbering span:first-child {
+  display: inline-block;
+  background-color: #f58020d9;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  line-height: 75px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  box-shadow: 0 0 1px 1px white inset;
+  filter: blur(10px);
+}
+.numbering span:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+.reachHelp ul li:nth-child(even) {
+  margin: 0 75px;
+}
+@media (max-width: 767px) {
+  .reachHelpFigure {
+    width: 200px;
+  }
+  .reachHelp ul li:nth-child(even) {
+    margin: 0 0 20px 0;
+  }
+}
+.howToChoose,
+.howToFooter {
+  font-size: 20px;
+  font-weight: 500;
+}
+.howToFooter {
+  color: #f58020;
+}
+
+/* Compined media queries */
+@media (max-width: 767px) {
+  .visualIdentityDesc .title,
+  .visualIdentityStepsTitle,
+  .visualIdentityBenefitsTitle,
+  .reachHelpQuestion {
+    font-size: 28px;
+  }
+  .steps .step .stepNumber {
+    font-size: 32px;
+  }
+}
+.titleDesc {
+  color: #f58020;
+  font-weight: 700;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .titleDesc {
+    font-size: 16px;
+  }
+}

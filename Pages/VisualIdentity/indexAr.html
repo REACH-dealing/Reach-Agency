@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Start Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap"
@@ -14,6 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
       rel="stylesheet"
     />
     <!-- End Fonts -->
@@ -26,8 +32,9 @@
     />
     <!-- End Bootstrap -->
     <!-- Start Style -->
-    <link rel="stylesheet" href="./css/master.css" />
-    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="../../css/master.css" />
+    <link rel="stylesheet" href="../../css/services.css" />
+    <link rel="stylesheet" href="../../css/all.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -37,13 +44,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <!-- End Style -->
-    <!--Start Slider -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <!--End Slider -->
-    <title>Reach</title>
+    <title>خدماتنا</title>
   </head>
   <body>
     <!-- Start Navbar -->
@@ -51,7 +52,7 @@
       class="navbar d-flex justify-content-between align-items-center pe-4 ps-4"
     >
       <div class="logo">
-        <img src="./images/logo.svg" alt="Reach" class="w-100" />
+        <img src="../../images/logo.svg" alt="Reach" class="w-100" />
       </div>
       <div class="toggleIcon">
         <span></span>
@@ -61,220 +62,208 @@
       <div class="links d-flex align-items-center">
         <ul
           class="d-flex justify-content-between align-items-center w-100 m-0 p-0 pe-md-5"
+          style="direction: rtl"
         >
           <li class="me-md-4">
-            <a
-              href="./index.html"
-              class="text-decoration-none text-white activeSection"
-              >Home</a
+            <a href="../../indexAr.html" class="text-decoration-none text-white"
+              >الرئيسية</a
             >
           </li>
           <li class="me-md-4">
             <a
-              href="./Pages/AboutUs/index.html"
+              href="../AboutUs/indexAr.html"
               class="text-decoration-none text-white"
-              >About Us</a
+              >عن ريتش</a
             >
           </li>
           <li class="me-md-4">
-            <a href="#services" class="text-decoration-none text-white"
-              >Services</a
+            <a
+              href="../../indexAr.html#services"
+              class="text-decoration-none text-white activeSection"
+              >خدماتنا</a
             >
           </li>
           <li class="me-md-4">
             <a href="#contactUs" class="text-decoration-none text-white"
-              >Contact Us</a
+              >تواصل معنا</a
             >
           </li>
         </ul>
         <div class="lang text-white ms-md-5">
-          <a href="./indexAr.html">
+          <a href="./index.html">
             <i class="fas fa-light fa-globe"></i>
-            <span>English</span>
+            <span>العربية</span>
           </a>
         </div>
       </div>
     </nav>
     <!-- End Navbar -->
-    <div class="pageContainer">
-      <!-- Start Home Section -->
-      <div
-        class="home section d-flex justify-content-between align-items-center"
-        id="home"
-      >
-        <div class="vision">
-          <div class="bigText">
-            Our ideas are the key to your digital success.
-          </div>
-          <div class="smallText ms-2">
-            We create integrated solutions in digital marketing and custom
-            programming to elevate your business in the digital world
-          </div>
-          <button class="ourServicesBtn mt-5">
-            <a href="#services">Explore Our Services</a>
-          </button>
-        </div>
-        <div class="visionImage"></div>
-      </div>
-      <!-- End Home Section -->
-      <!-- Start About Us Section -->
-      <div
-        class="aboutUs section d-flex align-items-start flex-column justify-content-center"
-        id="aboutUs"
-      >
-        <div class="aboutText">
-          <div class="aboutBigText bigText">
-            Welcome to <span>Reach Agency!</span>
-          </div>
-          <div class="smallText mt-2 pe-5">
-            At Reach Agency, we believe in the power of creativity and strategy
-            to transform brands and drive success. Founded on the principles of
-            innovation, excellence, and client partnership, our agency has been
-            delivering exceptional advertising solutions for years.
+    <!-- Start Visual Identity -->
+    <div class="visualIdentity">
+      <div class="container">
+        <div class="visualIdentityDesc text-center">
+          <div class="title">تصميم هوية بصرية كاملة لعلامتك التجارية</div>
+          <div class="question">ما هو تصميم الهوية البصرية للشركات؟</div>
+          <div class="desc">
+            <p>
+              الهوية البصرية هي العنصر الأساسي الذي يميز علامتك التجارية وتعكس
+              رسالتها وأهدافها، من خلال اختيار الألوان والخطوط الى تصميم الشعار
+              وقوالب التصميمات، لذلك نعمل في <a>شركة ريتش</a> على تقديم هوية
+              بصرية متكاملة تظهر تميزك في السوق، وتساعدك على بناء علاقة قوية
+              وموثوقة مع عملائك
+            </p>
           </div>
         </div>
       </div>
-      <!-- End About Us Section -->
-      <!-- Start Services Section -->
-      <div class="services section" id="services">
-        <div class="servicesHeader">
-          <p class="m-0">Our Services</p>
-        </div>
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="icon">
-                <img src="./images/SEO.png" alt="SEO" />
-              </div>
-              <div class="title fw-bold">Search Engine Optimization</div>
-              <div class="description">
-                Enhance your site's ranking in search results by using
-                comprehensive SEO strategies, from utilizing effective keywords
-                to optimizing articles and inter-page links, ensuring that your
-                store appears on the first pages.
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="icon">
-                <img src="./images/UIUX.png" alt="Mobile Development" />
-              </div>
-              <div class="title fw-bold">Mobile App Design And Development</div>
-              <div class="description">
-                We offer mobile app design and development services that combine
-                creativity and advanced technologies, with a focus on user
-                experience and ease of use.
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="icon">
-                <img src="./images/e.png" alt="Online Store Management" />
-              </div>
-              <div class="title fw-bold">E-Commerce Store Design</div>
-              <div class="description">
-                Amid the growing demand for e-commerce, whether you offer
-                products or services, creating a comprehensive online store is
-                the solution to achieving your goals and increasing your sales.
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <a href="./Pages/VisualIdentity/index.html">
-                <div class="icon">
-                  <img
-                    src="./images/brand.png"
-                    alt="Creating A Brand Identity"
-                  />
-                </div>
-                <div class="title fw-bold text-black">
-                  Creating A Brand Identity
-                </div>
-                <div class="description">
-                  A brand identity is not just a logo or colors; it is the
-                  essential element that distinguishes your brand from others
-                  and leaves a lasting impression in the minds of customers.
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="./Pages/AdvertizingCompaign/AdvertizingCompaign.html">
-                <div class="icon">
-                  <img
-                    src="./images/ads.png"
-                    alt="Advertising Campaign Management"
-                  />
-                </div>
-                <div class="title fw-bold text-black">
-                  Managing and Creating Advertising Campaigns
-                </div>
-                <div class="description">
-                  Social media management requires careful planning and research
-                  to reach the target customer. We begin by studying the market
-                  to understand trends, and then we develop a content plan and
-                  an effective publishing strategy.
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <div class="icon">
-                  <img src="./images/-02.png" alt="Website Design" />
-                </div>
-                <div class="title fw-bold text-black">
-                  Website Creation and Design
-                </div>
-                <div class="description">
-                  We offer you professional website designs that align with your
-                  brand, ensuring an exceptional user experience and effectively
-                  meeting your customers' needs.
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="./Pages/SocialMediaPlatform/SocialMediaPlatform.html">
-                <div class="icon">
-                  <img
-                    src="./images/MARKETING.png"
-                    alt="Social Media Management"
-                  />
-                </div>
-                <div class="title fw-bold text-black">
-                  Social Media Management
-                </div>
-                <div class="description">
-                  Social media management requires careful planning and research
-                  to reach the target customer. We start by studying the market
-                  to understand trends, then develop a content plan and an
-                  effective publishing strategy.
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <div class="icon">
-                  <img src="./images/DESIGN.png" alt="Graphic Design" />
-                </div>
-                <div class="title fw-bold text-black">Art Production</div>
-                <div class="description">
-                  Creating innovative designs and professional motion graphic
-                  videos enhances your advertising message with a creative
-                  touch, ensuring to capture attention and leave a strong
-                  impression in the minds of your customers
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-      <!-- End Services Section -->
     </div>
+    <div class="typeOfIdentitiy" style="direction: rtl">
+      <div
+        class="container d-flex justify-content-between align-items-center gap-3"
+      >
+        <div class="text">
+          <div class="title">أنواع الهوية</div>
+          <div class="types">
+            <div class="type mb-4">
+              <div class="typeTitle">هوية الشركات</div>
+              <div class="typeDesc">
+                نقدم خدمات تصميم هوية متكاملة للشركات تتضمن الألوان، الخطوط،
+                الشعار، ورق المراسلات، الأغلفة، بطاقات العمل، وقوالب التصميم
+              </div>
+            </div>
+            <div class="type mb-4">
+              <div class="typeTitle">هوية المنتجات</div>
+              <div class="typeDesc">
+                نقدم تصميم هوية بصرية مخصصة لمنتجاتك، بحيث يتضمن تصميم الشعار،
+                الغلاف والعبوات
+              </div>
+            </div>
+            <div class="type mb-4">
+              <div class="typeTitle">هوية الشخصية</div>
+              <div class="typeDesc">
+                تشمل تصميم بطاقات العمل، ورق المراسلات وتصميم العناصر البصرية
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="typeOfIdentityImg">
+          <img src="../../images/brand.png" alt="Visual Identity" />
+        </div>
+      </div>
+    </div>
+    <!-- End Visual Identity -->
+    <!-- Start Visual Identity Steps -->
+    <div class="visualIdentitySteps">
+      <div class="container text-center">
+        <div class="visualIdentityStepsTitle">خطوات عمل هوية بصرية</div>
+        <div class="steps row g-3">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="step">
+              <div class="stepNumber">01</div>
+              <div class="stepDesc">
+                معرفة الرؤية والرسالة التي تعبر عن أهداف الشركة.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="step">
+              <div class="stepNumber">02</div>
+              <div class="stepDesc">
+                إجراء بحث السوق وتحليل المنافسين لتحديد الأدوات البصرية
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="step">
+              <div class="stepNumber">03</div>
+              <div class="stepDesc">
+                البحث عن انواع الشعارات المختلفة لاختيار الشعار المناسب مع
+                العلامة التجارية
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="step">
+              <div class="stepNumber">04</div>
+              <div class="stepDesc">
+                تصميم شعار مميز يعبر عن هوية العلامة التجارية
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="step">
+              <div class="stepNumber">05</div>
+              <div class="stepDesc">
+                اختيار الألوان والخطوط المناسبة مع العلامة التجارية
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="step">
+              <div class="stepNumber">06</div>
+              <div class="stepDesc">
+                اعداد وتصميم ملف التعريفي للشركة والمطبوعات (بطاقات العمل، ورق
+                المراسلات، الأغلفة)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Visual Identity Steps -->
+    <!-- Start Visual Identity Benefits -->
+    <div class="visualIdentityBenefits" style="direction: rtl">
+      <div class="container">
+        <div class="visualIdentityBenefitsTitle position-relative text-center">
+          مميزات الهوية البصرية للشركات
+        </div>
+        <ul>
+          <li>تعزيز الوعي بالعلامة التجارية لشركتك</li>
+          <li>زيادة ثقة ومصداقية العملاء في الشركة</li>
+          <li>
+            تعزيز صورة شركتك بشكل إيجابي، من خلال تصاميم جذابة تناسب علامتك
+            التجارية
+          </li>
+          <li>سهولة تذكر العلامة التجارية لشركتك عن شركات المنافسين</li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Visual Identity Benefits -->
+    <!-- Start Visual Identity Reach Help -->
+    <div class="reachHelp">
+      <div class="container text-center">
+        <div class="reachHelpQuestion">
+          كيف يمكن لشركة ريتش أن تساعدك في تصميم في هوية بصرية؟
+        </div>
+        <div class="reachHelpintro mb-5">
+          إذا كنت تبحث عن تصميم هوية بصرية تميزك عن المنافسين وتعزز من قوة
+          علامتك التجارية فإن <a>شركة ريتش</a> هي خيارك الأفضل لتطوير علامتك
+          التجارية، حيث نقدم خدمة متكاملة وتتضمن:
+        </div>
+        <ul class="position-relative">
+          <li>
+            نقدم لعملائنا استشارة مجانية لتحديد نقاط القوة والضعف في علامتك
+            التجارية
+          </li>
+          <li>إجراء تحليل للسوق والبحث عن المنافسين لتطوير العلامة التجارية</li>
+          <li>وضع الخطة شاملة لتطوير العلامة التجارية للشركة</li>
+          <li>
+            يتم تطوير العلامة التجارية من خلال فريق عمل من المصممين المتخصصين في
+            تصميم الهوية
+          </li>
+          <li>
+            نصمم الهوية البصرية باللغتين العربية والإنجليزية حسب السوق المستهدف
+          </li>
+        </ul>
+        <div class="reachHelpFigure">
+          <img src="../../images/reachHelpFigure.png" alt="figure" />
+        </div>
+      </div>
+    </div>
+    <!-- End Visual Identity Reach Help -->
     <!-- Start Footer -->
-    <footer id="contactUs">
+    <footer id="contactUs" dir="rtl">
       <div class="information">
-        <div class="informationHeader">Contact Us</div>
+        <div class="informationHeader">تواصل معنا</div>
         <div>
           <svg
             width="36"
@@ -288,7 +277,7 @@
               fill="white"
             />
           </svg>
-          Jaddah
+          جدة
         </div>
         <div>
           <svg
@@ -356,46 +345,38 @@
         </div>
       </div>
       <div class="footerServices">
-        <div class="footerServicesHeader">Our Services</div>
+        <div class="footerServicesHeader">خدماتنا</div>
         <div>
           <div class="section1">
             <ul>
-              <li><a href="#">Art Production</a></li>
-              <li><a href="#">Creating A Visual Identity</a></li>
-              <li><a href="#">E-Commerce and Design</a></li>
+              <li><a href="#">إنتاج فني</a></li>
               <li>
-                <a href="./Pages/AdvertizingCompaign/AdvertizingCompaign.html"
-                  >Managing and Creating Advertising Campaigns</a
+                <a href="./indexAr.html">تصميم هوية بصرية</a>
+              </li>
+              <li><a href="#">تصميم المتاجر الإلكترونية</a></li>
+              <li>
+                <a href="../AdvertizingCompaign/AdvertizingCompaignAr.html"
+                  >إدارة وإنشاء الحملات الإعلانية</a
                 >
               </li>
-              <li><a href="#">Mobile App Design And Development</a></li>
+              <li><a href="#">تصميم وتطوير تطبيقات الهواتف</a></li>
             </ul>
           </div>
           <div class="section1">
             <ul>
-              <li><a href="#">Search Engine Optimization</a></li>
+              <li><a href="#">تحسين محركات البحث</a></li>
               <li>
-                <a href="./Pages/SocialMediaPlatform/SocialMediaPlatform.html"
-                  >Social Media Management</a
+                <a href="../SocialMediaPlatform/SocialMediaPlatformAr.html"
+                  >إدارة منصات التواصل الاجتماعي</a
                 >
               </li>
-              <li><a href="#">Website Creation and Design</a></li>
+              <li><a href="#">انشاء وتصميم المواقع الالكترونية</a></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
     <!-- End Footer -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script
-      src="https://kit.fontawesome.com/40ecf97f4e.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="../../js/services.js"></script>
   </body>
 </html>
