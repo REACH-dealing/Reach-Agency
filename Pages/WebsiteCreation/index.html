@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Start Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap"
@@ -14,12 +14,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
       rel="stylesheet"
     />
     <!-- End Fonts -->
@@ -32,8 +26,9 @@
     />
     <!-- End Bootstrap -->
     <!-- Start Style -->
-    <link rel="stylesheet" href="./css/master.css" />
-    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="../../css/master.css" />
+    <link rel="stylesheet" href="../../css/website.css" />
+    <link rel="stylesheet" href="../../css/all.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -43,18 +38,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <!-- End Style -->
-    <!--Start Slider -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <!--End Slider -->
-    <title>ريتش</title>
-    <style>
-      * {
-        font-family: "Cairo", sans-serif;
-      }
-    </style>
+    <title>Advertising Campaign</title>
   </head>
   <body>
     <!-- Start Navbar -->
@@ -62,7 +46,7 @@
       class="navbar d-flex justify-content-between align-items-center pe-4 ps-4"
     >
       <div class="logo">
-        <img src="./images/logo.svg" alt="Reach" class="w-100" />
+        <img src="../../images/logo.svg" alt="Reach" class="w-100" />
       </div>
       <div class="toggleIcon">
         <span></span>
@@ -72,206 +56,301 @@
       <div class="links d-flex align-items-center">
         <ul
           class="d-flex justify-content-between align-items-center w-100 m-0 p-0 pe-md-5"
-          style="direction: rtl"
         >
           <li class="me-md-4">
-            <a
-              href="./indexAr.html"
-              class="text-decoration-none text-white activeSection"
-              >الرئيسية</a
+            <a href="../../index.html" class="text-decoration-none text-white"
+              >Home</a
             >
           </li>
           <li class="me-md-4">
             <a
-              href="./Pages/AboutUs/indexAr.html"
+              href="../AboutUs/index.html"
               class="text-decoration-none text-white"
-              >عن ريتش</a
+              >About Us</a
             >
           </li>
           <li class="me-md-4">
-            <a href="#services" class="text-decoration-none text-white"
-              >خدماتنا</a
+            <a
+              href="../../index.html#services"
+              class="text-decoration-none text-white activeSection"
+              >Services</a
             >
           </li>
           <li class="me-md-4">
             <a href="#contactUs" class="text-decoration-none text-white"
-              >تواصل معنا</a
+              >Contact Us</a
             >
           </li>
         </ul>
         <div class="lang text-white ms-md-5">
-          <a href="./index.html">
+          <a href="./SocialMediaPlatformAr.html">
             <i class="fas fa-light fa-globe"></i>
-            <span>العربية</span>
+            <span>English</span>
           </a>
         </div>
       </div>
     </nav>
     <!-- End Navbar -->
-    <!-- Start Home Section -->
-    <div class="pageContainer">
-      <div
-        class="home section d-flex justify-content-between align-items-center"
-        id="home"
-        style="direction: rtl"
-      >
-        <div class="vision">
-          <div class="bigText">أفكارنا مفتاح نجاحك الرقمي</div>
-          <div class="smallText ms-2">
-            نبتكر حلولاً متكاملة في التسويق الإلكتروني والبرمجة الخاصة، لنرتقي
-            بأعمالك في العالم الرقمي.
+    <!-- Start Visual Identity -->
+    <div class="visualIdentity">
+      <div class="container">
+        <div class="visualIdentityDesc text-center">
+          <div class="title">How to program a website?</div>
+          <div class="desc">
+            <p>
+              Programming a website requires knowledge of a set of tools and
+              technologies used to design and develop pages and functionalities
+              that users can interact with. This method gives you full control
+              over the website's appearance and behavior, allowing you to create
+              specialized websites that meet the needs of your project
+            </p>
           </div>
-          <button class="ourServicesBtn mt-5">
-            <a href="#services">اكتشف خدماتنا</a>
-          </button>
-        </div>
-        <div class="visionImage"></div>
-      </div>
-      <!-- End Home Section -->
-      <!-- Start About Us Section -->
-      <div
-        class="aboutUs section d-flex align-items-start flex-column justify-content-center"
-        id="aboutUs"
-      >
-        <div class="aboutText">
-          <div class="aboutBigText bigText">عن <span>ريتش</span></div>
-          <div class="smallText mt-2 pe-5">
-            ريتش شركة متخصصة في التسويق الرقمي والبرمجة الخاصة تتميز بفريق من
-            المتخصصين لتقديم حلول شاملة وفعالة في الأسواق. نهدف إلى تحويل
-            أفكارنا إلى نتائج وتحقيق أهداف عملائنا
-          </div>
-        </div>
-      </div>
-      <!-- End About Us Section -->
-      <!-- Start Services Section -->
-      <div class="services section" id="services">
-        <div class="servicesHeader">
-          <p class="m-0">خدماتنا</p>
-        </div>
-        <div class="swiper" style="direction: rtl">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="icon">
-                <img src="./images/SEO.png" alt="SEO" />
-              </div>
-              <div class="title fw-bold">تحسين محركات البحث</div>
-              <div class="description">
-                تعزيز ترتيب موقعك في نتائج البحث من خلال استخدام استراتيجيات SEO
-                متكاملة، من استخدام كلمات مفتاحية فعّالة إلى تحسين المقالات
-                والروابط بين الصفحات، مما يضمن ظهور متجرك في الصفحات الأولى
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="icon">
-                <img src="./images/UIUX.png" alt="Mobile Development" />
-              </div>
-              <div class="title fw-bold">تصميم وتطوير تطبيقات الهواتف</div>
-              <div class="description">
-                نقدم خدمة تصميم وتطوير تطبيقات الهواتف الذكية التي تجمع بين
-                الإبداع والتقنيات المتقدمة مع التركيز على تجربة المستخدم وسهولة
-                الاستخدام
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="icon">
-                <img src="./images/e.png" alt="Online Store Management" />
-              </div>
-              <div class="title fw-bold">تصميم المتاجر الإلكترونية</div>
-              <div class="description">
-                في ظل تزايد الطلب على التجارة الالكترونية، سواء كنت تقدم منتجات
-                أو خدمات، فإن إنشاء متجر إلكتروني متكامل هو الحل لتحقيق أهدافك
-                وزيادة مبيعاتك.
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <a href="./Pages/VisualIdentity/indexAr.html">
-                <div class="icon">
-                  <img
-                    src="./images/brand.png"
-                    alt="Creating A Brand Identity"
-                  />
-                </div>
-                <div class="title fw-bold text-black">انشاء هوية بصرية</div>
-                <div class="description">
-                  الهوية التجارية ليست مجرد شعار أو ألوان، بل هي العنصر الأساسي
-                  الذي يميز علامتك التجارية عن الآخرين ويترك انطباعاً دائماً في
-                  أذهان العملاء
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="./Pages/WebsiteCreation/indexAr.html">
-                <div class="icon">
-                  <img src="./images/-02.png" alt="Website Design" />
-                </div>
-                <div class="title fw-bold">
-                  انشاء وتصميم المواقع الالكترونية
-                </div>
-                <div class="description">
-                  نقدم لك تصميم مواقع إلكترونية احترافية تتناسب مع علامتك
-                  التجارية، مع ضمان تجربة مستخدم مميزة وتلبية احتياجات عملائك
-                  بفعالية.
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="./Pages/SocialMediaPlatform/SocialMediaPlatformAr.html">
-                <div class="icon">
-                  <img
-                    src="./images/MARKETING.png"
-                    alt="Social Media Management"
-                  />
-                </div>
-                <div class="title fw-bold text-black">
-                  إدارة منصات التواصل الاجتماعي
-                </div>
-                <div class="description">
-                  إدارة وسائل التواصل الاجتماعي تحتاج لتخطيط وبحث دقيق للوصول
-                  للعميل المستهدف، نبدأ بدراسة السوق لفهم الاتجاهات، ثم نضع خطة
-                  محتوى واستراتيجية نشر فعّالة
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <div class="icon">
-                <img src="./images/DESIGN.png" alt="Graphic Design" />
-              </div>
-              <div class="title fw-bold">انتاج فني</div>
-              <div class="description">
-                انشاء تصميمات ابداعية وفيديوهات موشن جرافيك احترافية تعزز رسالتك
-                الاعلانية بلمسة إبداعية، مما يضمن جذب الانتباه وترك انطباع قوي
-                في أذهان عملائك
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <a href="./Pages/AdvertizingCompaign/AdvertizingCompaignAr.html">
-                <div class="icon">
-                  <img src="./images/DESIGN.png" alt="Graphic Design" />
-                </div>
-                <div class="title fw-bold text-black">
-                  إدارة وإنشاء الحملات الإعلانية
-                </div>
-                <div class="description">
-                  الحملات الإعلانية المدفوعة تستهدف العملاء بدقة باستخدام
-                  استراتيجيات مختلفة، مما يساعد في زيادة المبيعات وتحويل الزوار
-                  إلى عملاء فعليين
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
       </div>
     </div>
-    <!-- End Services Section -->
+    <div class="typeOfIdentitiy">
+      <div class="container">
+        <div class="title text-black lh-1 fs-1 mb-4 fw-bold">
+          What is a website and how does it work?
+        </div>
+      </div>
+      <div
+        class="container d-flex justify-content-between align-items-center gap-3"
+      >
+        <div class="titleDesc mb-4">
+          Simply put, a website is a digital interface on the internet that
+          displays information and services, consisting of a set of
+          interconnected pages. These pages are programmed using one or more
+          programming languages to form a website, which can be easily accessed
+          from any device connected to the internet. As for how a website works,
+          it relies on displaying the pages that have been programmed and stored
+          on a server. The server plays a crucial role in running the website as
+          it holds all the site’s files. The website domain is then linked to
+          the server, allowing visitors to easily view the website’s pages.
+        </div>
+        <div class="typeOfIdentityImg">
+          <img src="../../images//MARKETING.png" alt="Visual Identity" />
+        </div>
+      </div>
+    </div>
+    <!-- End Visual Identity -->
+    <!-- Start Visual Identity Reach Help -->
+    <div class="reachHelp">
+      <div class="container">
+        <div class="reachHelpQuestion text-center">
+          Steps to Create and Design a Website Using Custom Programming
+        </div>
+        <ul class="position-relative">
+          <li class="d-flex justify-content-start align-items-center gap-4">
+            <span class="numbering">
+              <span></span>
+              <span>01</span>
+            </span>
+            <p>
+              <strong>UI/UX Design:</strong> Designing the user experience and
+              planning the user interface using tools like Adobe XD or Figma.
+            </p>
+          </li>
+          <li class="d-flex justify-content-start align-items-center gap-4">
+            <span class="numbering">
+              <span></span>
+              <span>02</span>
+            </span>
+            <p>
+              <strong>Front-End:</strong> This is the visible part of the
+              website that users directly interact with, such as design, colors,
+              text, and menus—everything that appears on the website when it is
+              launched. It involves programming languages such as: HTML , CSS ,
+              JavaScript , Bootstrap
+            </p>
+          </li>
+          <li class="d-flex justify-content-start align-items-center gap-4">
+            <span class="numbering">
+              <span></span>
+              <span>03</span>
+            </span>
+            <p>
+              <strong>Back-End:</strong> This is the part that users do not see
+              directly, but it is responsible for running the website and
+              storing data. It includes: Servers(PHP , Python) , Databases
+              (MySQL , PostgreSQL).
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Visual Identity Reach Help -->
+    <!-- Start Visual Identity Steps -->
+    <div class="visualIdentitySteps">
+      <div class="container text-center">
+        <div class="visualIdentityStepsTitle">Steps to Program a Website</div>
+        <div class="steps row g-3">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="step">
+              <div class="stepNumber">01</div>
+              <div class="stepDesc">
+                Planning Define the website's purpose and target audience, and
+                plan the design and features.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="step">
+              <div class="stepNumber">02</div>
+              <div class="stepDesc">
+                Writing Code Program the structure using HTML, style the design
+                with CSS, and add interactivity with JavaScript.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="step">
+              <div class="stepNumber">03</div>
+              <div class="stepDesc">
+                Back-End Development Set up the server and database, and write
+                code to handle data and manage interactions.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="step">
+              <div class="stepNumber">04</div>
+              <div class="stepDesc">
+                Testing Ensure the website functions properly across all devices
+                and browsers.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="step">
+              <div class="stepNumber">05</div>
+              <div class="stepDesc">
+                Deployment Upload the website to a web server to make it
+                available to users online.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Visual Identity Steps -->
+    <!-- Start How to Choose -->
+    <div class="howToChoose">
+      <div class="container">
+        <div class="reachHelpQuestion shapes text-center mb-4">
+          What are the advantages of creating a website using custom
+          programming?
+        </div>
+        <div class="titleDesc text-center mb-4">
+          When designing a website through custom programming, it offers several
+          advantages that make it more efficient and tailored to your needs. The
+          most important benefits include:
+        </div>
+        <div class="howToList mb-5">
+          <ul>
+            <li
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
+            >
+              <span
+                ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
+              /></span>
+              Full Customization: Every part of the website can be designed
+              according to your exact requirements and vision, without any
+              limitations.
+            </li>
+            <li
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
+            >
+              <span
+                ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
+              /></span>
+              High Performance: Custom code allows for optimizing the website’s
+              speed and reducing load time, which enhances the user experience.
+            </li>
+            <li
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
+            >
+              <span
+                ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
+              /></span>
+              Seamless Integration: The website can easily be integrated or
+              connected with other systems you may have, such as content
+              management systems or databases.
+            </li>
+            <li
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
+            >
+              <span
+                ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
+              /></span>
+              Flexibility: Features can be added periodically based on your
+              evolving needs and business activities.
+            </li>
+            <li
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
+            >
+              <span
+                ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
+              /></span>
+              Scalability: The website can be designed to scale easily over time
+              without needing a complete restructuring.
+            </li>
+            <li
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
+            >
+              <span
+                ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
+              /></span>
+              Innovative Solutions: You can implement creative ideas and design
+              a unique user experience.
+            </li>
+            <li
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
+            >
+              <span
+                ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
+              /></span>
+              Complete Control: You have control over every part of the site,
+              offering greater flexibility in managing and designing it to match
+              your vision.
+            </li>
+            <li
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
+            >
+              <span
+                ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
+              /></span>
+              Search Engine Optimization (SEO): The code can be customized to
+              comply with search engine algorithms, helping improve the
+              website’s ranking in search results.
+            </li>
+            <li
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
+            >
+              <span
+                ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
+              /></span>
+              Enhanced Security: Strong security layers can be built to protect
+              the website from hacks and cyber threats.
+            </li>
+            <li
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
+            >
+              <span
+                ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
+              /></span>
+              Conflict-Free: You avoid conflicts that might occur when using
+              pre-built templates or plugins.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End How to Choose -->
     <!-- Start Footer -->
-    <footer id="contactUs" dir="rtl">
+    <footer id="contactUs">
       <div class="information">
-        <div class="informationHeader">تواصل معنا</div>
+        <div class="informationHeader">Contact Us</div>
         <div>
           <svg
             width="36"
@@ -285,7 +364,7 @@
               fill="white"
             />
           </svg>
-          جدة
+          Jaddah
         </div>
         <div>
           <svg
@@ -353,54 +432,40 @@
         </div>
       </div>
       <div class="footerServices">
-        <div class="footerServicesHeader">خدماتنا</div>
+        <div class="footerServicesHeader">Our Services</div>
         <div>
           <div class="section1">
             <ul>
-              <li><a href="#">إنتاج فني</a></li>
+              <li><a href="">Art Production</a></li>
               <li>
-                <a href="./Pages/VisualIdentity/indexAr.html"
-                  >تصميم هوية بصرية</a
+                <a href="../VisualIdentity/index.html"
+                  >Creating A Visual Identity</a
                 >
               </li>
-              <li><a href="#">تصميم المتاجر الإلكترونية</a></li>
+              <li><a href="#">E-Commerce and Design</a></li>
               <li>
-                <a href="./Pages/AdvertizingCompaign/AdvertizingCompaignAr.html"
-                  >إدارة وإنشاء الحملات الإعلانية</a
+                <a href="../AdvertizingCompaign/AdvertizingCompaign.html"
+                  >Managing and Creating Advertising Campaigns</a
                 >
               </li>
-              <li><a href="#">تصميم وتطوير تطبيقات الهواتف</a></li>
+              <li><a href="#">Mobile App Design And Development</a></li>
             </ul>
           </div>
           <div class="section1">
             <ul>
-              <li><a href="#">تحسين محركات البحث</a></li>
+              <li><a href="#">Search Engine Optimization</a></li>
               <li>
-                <a href="./Pages/SocialMediaPlatform/SocialMediaPlatformAr.html"
-                  >إدارة منصات التواصل الاجتماعي</a
+                <a href="../SocialMediaPlatform/SocialMediaPlatform.html"
+                  >Social Media Management</a
                 >
               </li>
-              <li>
-                <a href="./Pages/WebsiteCreation/indexAr.html"
-                  >انشاء وتصميم المواقع الالكترونية</a
-                >
-              </li>
+              <li><a href="#">Website Creation and Design</a></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
     <!-- End Footer -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script
-      src="https://kit.fontawesome.com/40ecf97f4e.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="../../js/services.js"></script>
   </body>
 </html>
