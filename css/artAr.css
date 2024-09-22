@@ -239,7 +239,7 @@
   font-weight: bold;
 }
 .reachHelp ul li:nth-child(even) {
-  margin: 0 75px 30px;
+  margin: 0 75px;
 }
 @media (max-width: 767px) {
   .reachHelpFigure {
@@ -290,7 +290,7 @@
   background-color: black;
   border-radius: 50%;
   top: 50%;
-  left: -30px;
+  right: -30px;
   transform: translateY(-50%);
 }
 @media (max-width: 767px) {
