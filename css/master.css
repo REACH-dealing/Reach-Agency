@@ -66,6 +66,9 @@ ul li {
   font-size: 18px;
   color: var(--mainColor);
 }
+.links ul li a:hover {
+  text-decoration: underline !important;
+}
 @media (max-width: 991px) {
   .navbar {
     font-size: 0.75rem;
@@ -202,6 +205,7 @@ ul li {
 }
 .aboutText {
   position: relative;
+  overflow: hidden;
 }
 .aboutImage {
   border: 2px solid #f580204d;
