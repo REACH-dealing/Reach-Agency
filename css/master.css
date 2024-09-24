@@ -113,7 +113,7 @@ ul li {
 
 /* Start Section Seperation */
 .section:not(.section.services) {
-  min-height: 700px;
+  min-height: calc(100vh - 85px);
   max-width: 100%;
   padding: 0 60px;
   position: relative;
@@ -155,9 +155,29 @@ ul li {
   width: 50%;
   border-radius: 100px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .bigText {
     font-size: 2.8rem;
+  }
+  .vision {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .visionImage {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .bigText {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  .vision {
+    text-align: center;
+  }
+  .section:not(.section.services) {
+    padding: 0 10px;
   }
 }
 
@@ -169,6 +189,7 @@ ul li {
 .aboutBigText span {
   position: relative;
   font-weight: 700;
+  display: inline-block;
 }
 .aboutBigText span::before {
   content: "";
@@ -182,17 +203,27 @@ ul li {
 .aboutText {
   position: relative;
 }
-.aboutText::before {
-  content: "";
-  position: absolute;
-  width: 360px;
-  height: 360px;
-  background-color: var(--mainColor);
-  border-radius: 50%;
-  top: 50%;
-  left: -5%;
-  transform: translateY(-50%);
-  z-index: -1;
+.aboutImage {
+  border: 2px solid #f580204d;
+  border-radius: 5px;
+  max-width: 440px;
+}
+.aboutUs div img {
+  width: 100%;
+  max-width: 440px;
+}
+.aboutUs > div {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  .aboutUs > div {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .aboutImage {
+    margin: auto;
+  }
 }
 
 /* Start Services Section */
