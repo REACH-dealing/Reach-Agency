@@ -135,44 +135,32 @@
 .reachHelp {
   padding: 80px 0;
 }
-.typeOfIdentitiy .text .title {
+.typeOfIdentitiy .container .title {
   color: #f58020;
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 30px;
-}
-.typeOfIdentitiy .text .types .type > div {
-  background-color: #feac69;
-  padding: 50px 30px;
-  height: 100%;
-  color: white;
   text-align: center;
+  border-bottom: 1px solid #727171;
 }
-.typeOfIdentitiy .text .types .type .typeTitle {
-  font-weight: 700;
+.typeOfIdentitiy .container .titleDesc {
+  color: #4c4a44;
   font-size: 20px;
+  font-weight: 700;
 }
-.typeOfIdentityImg {
-  min-width: 50%;
+.typeOfIdentitiy .container .typesText {
+  width: 50%;
+}
+.typeOfIdentitiy .container .typesImg {
+  width: 50%;
   text-align: center;
 }
-.typeOfIdentityImg img {
+.typeOfIdentitiy .container .typesImg img {
   width: 100%;
+  max-width: 400px;
 }
 @media (max-width: 991px) {
-  .typeOfIdentitiy .text .title {
+  .typeOfIdentitiy .container .title {
     font-size: 32px;
-  }
-  .typeOfIdentitiy .text .types .type .typeTitle {
-    font-size: 18px;
-  }
-  .typeOfIdentitiy .text .types .type .typeDesc {
-    font-size: 14px;
-  }
-}
-@media (max-width: 767px) {
-  .typeOfIdentityImg {
-    display: none;
   }
 }
 /* Start Visual Identity */
@@ -221,51 +209,18 @@
   background: #f58020 !important;
 }
 
-/* Visual Identity Benefits */
-.visualIdentityBenefitsTitle {
-  margin: auto;
-  margin-bottom: 70px;
-  width: 100%;
-  padding: 20px;
-}
-.visualIdentityBenefits .container {
-  font-size: 20px;
-}
-.visualIdentityBenefits .container div > div::before {
-  content: "";
-  position: absolute;
-  width: 194px;
-  height: 27px;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-image: url("../images/Underline_06.png");
-  background-size: contain;
-}
-.visualIdentityBenefits ul li {
-  margin-bottom: 50px;
-  margin-left: 50px;
-}
-.visualIdentityBenefits .benefitsImg {
-  width: 50%;
-  text-align: center;
-}
-.benefitsImg img {
-  width: 100%;
-  max-width: 400px;
-}
-@media (max-width: 576px) {
-  .visualIdentityBenefitsTitle {
-    width: 100%;
-  }
-  .benefitsImg {
-    display: none;
-  }
-}
-
 /* Start Visual Identity React Help */
+.howToChoose .container .titleDesc,
+.reachHelp .container .titleDesc {
+  color: #f58020;
+  font-size: 20px;
+  font-weight: 700;
+}
 .reachHelpQuestion,
 .reachHelpQuestion2 {
+  padding: 20px;
+}
+.reachHelpQuestion {
   margin: auto;
   margin-bottom: 10px;
 }
@@ -328,10 +283,10 @@
     margin: 0 !important;
   }
 }
-.howToChoose2 {
+.howToChoose {
   font-size: 20px;
 }
-.reachHelpQuestion2 {
+.reachHelpQuestion {
   margin-bottom: 10px;
   position: relative;
   padding: 30px 0;
@@ -351,10 +306,9 @@
   margin-bottom: 30px;
 }
 .reachHelp ul {
-  width: 80%;
   margin: auto;
 }
-.howToFooter2 {
+.howToFooter {
   color: #f58020;
   font-size: 20px;
   font-weight: 700;

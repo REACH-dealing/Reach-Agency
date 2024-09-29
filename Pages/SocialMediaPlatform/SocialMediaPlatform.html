@@ -27,7 +27,7 @@
     <!-- End Bootstrap -->
     <!-- Start Style -->
     <link rel="stylesheet" href="../../css/master.css" />
-    <link rel="stylesheet" href="../../css/Ads.css" />
+    <link rel="stylesheet" href="../../css/socialMedia.css" />
     <link rel="stylesheet" href="../../css/all.min.css" />
     <link
       rel="stylesheet"
@@ -38,6 +38,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <!-- End Style -->
+    <!--Start Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!--End Slider -->
     <title>Advertising Campaign</title>
   </head>
   <body>
@@ -93,25 +99,30 @@
     <!-- End Navbar -->
     <!-- Start Visual Identity -->
     <div class="visualIdentity">
+      <div class="right"></div>
       <div class="container">
         <div class="visualIdentityDesc text-center">
           <div class="title">How do you manage social media platforms?</div>
-          <div class="question">What is social media management?</div>
-          <div class="desc">
-            <p>
-              Social media management is a set of strategies aimed at enhancing
-              brand visibility on social media platforms such as Snapchat,
-              Facebook, Twitter, LinkedIn, YouTube, Instagram, and TikTok. It
-              includes a range of integrated steps aimed at improving audience
-              engagement and increasing brand awareness.
-            </p>
+          <div class="text">
+            <div class="question">What is social media management?</div>
+            <div class="desc">
+              <p>
+                Social media management is a set of strategies aimed at
+                enhancing brand visibility on social media platforms such as
+                Snapchat, Facebook, Twitter, LinkedIn, YouTube, Instagram, and
+                TikTok. It includes a range of integrated steps aimed at
+                improving audience engagement and increasing brand awareness.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- End Visual Identity -->
+    <!-- Start Types -->
     <div class="typeOfIdentitiy">
       <div class="container">
-        <div class="title text-black lh-1 fs-1 mb-4 fw-bold">
+        <div class="title mb-3">
           What is the importance of social media management?
         </div>
         <div class="titleDesc mb-4">
@@ -124,50 +135,61 @@
         </div>
       </div>
       <div
-        class="container d-flex justify-content-between align-items-center gap-3"
+        class="container d-flex justify-content-center align-items-center gap-3"
       >
-        <div class="text">
-          <div class="types">
-            <div class="type mb-4">
-              <div class="typeTitle">Enhancing Brand Awareness</div>
-              <div class="typeDesc">
-                Social media platforms are essential tools for boosting brand
-                awareness. By simply having your company visible on these
-                platforms, you can build customer trust in the quality of your
-                products and services. Utilizing effective promotion strategies
-                allows you to directly reach your target audience.
-              </div>
-            </div>
-            <div class="type mb-4">
-              <div class="typeTitle">Increasing Conversion Rates and Sales</div>
-              <div class="typeDesc">
-                Continued interaction and engagement from users with the content
-                your company provides is a step towards converting these users
-                into potential customers. This interaction helps increase sales
-                and conversion rates. By regularly monitoring and analyzing
-                results, you can refine your strategies to better achieve the
-                company's goals.
-              </div>
-            </div>
-            <div class="type mb-4">
-              <div class="typeTitle">
-                Building Strong Customer Relationships
-              </div>
-              <div class="typeDesc">
-                Building strong relationships with your customers begins with
-                managing social media platforms. By responding quickly to
-                comments and messages, you can foster customer loyalty and
-                ensure ongoing communication.
-              </div>
-            </div>
-          </div>
+        <div class="typesImg">
+          <img src="../../images/MARKETING.png" alt="MARKETING" />
         </div>
-        <div class="typeOfIdentityImg">
-          <img src="../../images//MARKETING.png" alt="Visual Identity" />
+        <div class="typesText">
+          <ul>
+            <li class="d-flex gap-2 justify-content-start align-items-start">
+              <img src="../../images/plus.svg" alt="plus" />
+              <div class="lh-md">
+                <div class="fw-bold mb-2">Enhancing Brand Awareness</div>
+                <p>
+                  Social media platforms are essential tools for boosting brand
+                  awareness. By simply having your company visible on these
+                  platforms, you can build customer trust in the quality of your
+                  products and services. Utilizing effective promotion
+                  strategies allows you to directly reach your target audience.
+                </p>
+              </div>
+            </li>
+            <li class="d-flex gap-2 justify-content-start align-items-start">
+              <img src="../../images/plus.svg" alt="plus" />
+              <div class="lh-md">
+                <div class="fw-bold mb-2">
+                  Increasing Conversion Rates and Sales
+                </div>
+                <p>
+                  Continued interaction and engagement from users with the
+                  content your company provides is a step towards converting
+                  these users into potential customers. This interaction helps
+                  increase sales and conversion rates. By regularly monitoring
+                  and analyzing results, you can refine your strategies to
+                  better achieve the company's goals.
+                </p>
+              </div>
+            </li>
+            <li class="d-flex gap-2 justify-content-start align-items-start">
+              <img src="../../images/plus.svg" alt="plus" />
+              <div class="lh-md">
+                <div class="fw-bold mb-2">
+                  Building Strong Customer Relationships
+                </div>
+                <p>
+                  Building strong relationships with your customers begins with
+                  managing social media platforms. By responding quickly to
+                  comments and messages, you can foster customer loyalty and
+                  ensure ongoing communication.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- End Visual Identity -->
+    <!-- End Types -->
     <!-- Start Visual Identity Steps -->
     <div class="visualIdentitySteps">
       <div class="container text-center">
@@ -175,50 +197,57 @@
           Steps for Managing Social Media Pages
         </div>
         <div class="steps row g-3">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">01</div>
-              <div class="stepDesc">
-                Defining the Goal The goal should be clear, realistic,
-                measurable, and time-bound.
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">01</div>
+                  <div class="stepDesc">
+                    Defining the Goal The goal should be clear, realistic,
+                    measurable, and time-bound.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">02</div>
+                  <div class="stepDesc">
+                    Accurately Identifying the Target Audience This ensures that
+                    your marketing message reaches the right people.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">03</div>
+                  <div class="stepDesc">
+                    Choosing the Right Platforms Select the platforms that your
+                    target audience regularly uses.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">04</div>
+                  <div class="stepDesc">
+                    Creating Relevant Content Develop content that suits each
+                    platform and reflects the interests of your audience.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">05</div>
+                  <div class="stepDesc">
+                    Analyzing Platform Performance Measure the strategy’s
+                    performance and assess the results using analytical tools.
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">02</div>
-              <div class="stepDesc">
-                Accurately Identifying the Target Audience This ensures that
-                your marketing message reaches the right people.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">03</div>
-              <div class="stepDesc">
-                Choosing the Right Platforms Select the platforms that your
-                target audience regularly uses.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">04</div>
-              <div class="stepDesc">
-                Creating Relevant Content Develop content that suits each
-                platform and reflects the interests of your audience.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">05</div>
-              <div class="stepDesc">
-                Analyzing Platform Performance Measure the strategy’s
-                performance and assess the results using analytical tools.
-              </div>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -230,53 +259,67 @@
         <div class="reachHelpQuestion text-center">
           Best Strategies for Managing Social Media Platforms
         </div>
-        <div class="titleDesc text-center mb-4">
+        <div class="titleDesc text-start mb-5">
           Social media management strategies are a powerful tool for enhancing
           brand awareness and achieving marketing goals. It is essential to
           establish clear steps to reach these objectives, along with a precise
           timeline for implementing each step. Here are the best strategies that
           contribute to the success of campaigns on social media platforms:
         </div>
-        <ul class="position-relative">
+        <ul class="position-relative ms-md-5">
           <li class="d-flex justify-content-start align-items-center gap-4">
             <span class="numbering">
               <span></span>
               <span>01</span>
             </span>
-            Providing Valuable Content: Share content that benefits followers,
-            adds real value, and enhances engagement.
+            <div>
+              <div class="fw-bold">Providing Valuable Content:</div>
+              Share content that benefits followers, adds real value, and
+              enhances engagement.
+            </div>
           </li>
           <li class="d-flex justify-content-start align-items-center gap-4">
             <span class="numbering">
               <span></span>
               <span>02</span>
             </span>
-            Short Videos (Reels): Utilize the power of short videos to grab
-            attention and increase interaction.
+            <div>
+              <div class="fw-bold">Short Videos (Reels):</div>
+              Utilize the power of short videos to grab attention and increase
+              interaction.
+            </div>
           </li>
           <li class="d-flex justify-content-start align-items-center gap-4">
             <span class="numbering">
               <span></span>
               <span>03</span>
             </span>
-            User-Generated Content (UGC): Encourage followers to create content
-            about your brand, which boosts credibility.
+            <div>
+              <div class="fw-bold">User-Generated Content (UGC):</div>
+              Encourage followers to create content about your brand, which
+              boosts credibility.
+            </div>
           </li>
           <li class="d-flex justify-content-start align-items-center gap-4">
             <span class="numbering">
               <span></span>
               <span>04</span>
             </span>
-            Paid Advertising: Target the right audience to increase awareness
-            and attract new followers.
+            <div>
+              <div class="fw-bold">Paid Advertising:</div>
+              Target the right audience to increase awareness and attract new
+              followers.
+            </div>
           </li>
           <li class="d-flex justify-content-start align-items-center gap-4">
             <span class="numbering">
               <span></span>
               <span>05</span>
             </span>
-            Collaboration with Influencers: Partner with influencers to promote
-            your brand and build trust.
+            <div>
+              <div class="fw-bold">Collaboration with Influencers:</div>
+              Partner with influencers to promote your brand and build trust.
+            </div>
           </li>
         </ul>
       </div>
@@ -284,11 +327,11 @@
     <!-- End Visual Identity Reach Help -->
     <!-- Start How to Choose -->
     <div class="howToChoose">
+      <div class="reachHelpQuestion2 text-center mb-4">
+        How to Choose the Right Company to Manage Your Advertising Campaign?
+      </div>
       <div class="container">
-        <div class="reachHelpQuestion text-center mb-4">
-          How to Choose the Right Company to Manage Your Advertising Campaign?
-        </div>
-        <div class="titleDesc text-center mb-4">
+        <div class="titleDesc text-start mb-4">
           Managing social media accounts is one of the key factors for the
           success of any business. Therefore, it's best to choose a company that
           specializes in digital marketing. Rich has proven its excellence in
@@ -461,6 +504,8 @@
       </div>
     </footer>
     <!-- End Footer -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
     <script src="../../js/services.js"></script>
   </body>
 </html>
