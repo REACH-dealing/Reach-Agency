@@ -38,6 +38,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <!-- End Style -->
+    <!--Start Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!--End Slider -->
     <title>Document</title>
   </head>
   <body>
@@ -93,63 +99,115 @@
     <!-- End Navbar -->
     <!-- Start Visual Identity -->
     <div class="visualIdentity">
+      <div class="right"></div>
       <div class="container">
         <div class="visualIdentityDesc text-center">
           <div class="title">
             Complete Visual Identity Design For Your Brand
           </div>
-          <div class="question">What is corporate visual identity design?</div>
-          <div class="desc">
-            <p>
-              The visual identity is the key element that distinguishes your
-              brand and reflects its message and goals. It encompasses
-              everything from choosing colors and fonts to designing the logo
-              and templates. At <a>Reach</a> Company, we work on providing a
-              comprehensive visual identity that highlights your uniqueness in
-              the market and helps you build a strong and trustworthy
-              relationship with your clients.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="typeOfIdentitiy">
-      <div
-        class="container d-flex justify-content-between align-items-center gap-3"
-      >
-        <div class="text">
-          <div class="title">Types Of Identity</div>
-          <div class="types">
-            <div class="type mb-4">
-              <div class="typeTitle">Corporate Identity</div>
-              <div class="typeDesc">
-                We offer comprehensive corporate identity design services,
-                including colors, fonts, logo, letterhead, packaging, business
-                cards, and design templates.
-              </div>
+          <div class="text">
+            <div class="question">
+              What is corporate visual identity design?
             </div>
-            <div class="type mb-4">
-              <div class="typeTitle">Product Identity</div>
-              <div class="typeDesc">
-                We provide custom visual identity design for your products,
-                including logo design, packaging, and containers.
-              </div>
-            </div>
-            <div class="type mb-4">
-              <div class="typeTitle">Personal Identity</div>
-              <div class="typeDesc">
-                This includes the design of business cards, letterhead, and
-                visual elements.
-              </div>
+            <div class="desc">
+              <p>
+                The visual identity is the key element that distinguishes your
+                brand and reflects its message and goals. It encompasses
+                everything from choosing colors and fonts to designing the logo
+                and templates. At <a>Reach</a> Company, we work on providing a
+                comprehensive visual identity that highlights your uniqueness in
+                the market and helps you build a strong and trustworthy
+                relationship with your clients.
+              </p>
             </div>
           </div>
-        </div>
-        <div class="typeOfIdentityImg">
-          <img src="../../images/brand.png" alt="Visual Identity" />
         </div>
       </div>
     </div>
     <!-- End Visual Identity -->
+    <!-- Start types of identity -->
+    <div class="typeOfIdentitiy">
+      <div class="container">
+        <div class="text d-grid g-3">
+          <div class="title row text-center m-auto mb-4">Types Of Identity</div>
+          <div class="types row">
+            <div class="type mb-4 col-12 col-md-4">
+              <div>
+                <div class="typeTitle mb-3">Corporate Identity</div>
+                <div class="typeDesc">
+                  We offer comprehensive corporate identity design services,
+                  including colors, fonts, logo, letterhead, packaging, business
+                  cards, and design templates.
+                </div>
+              </div>
+            </div>
+            <div class="type mb-4 col-12 col-md-4">
+              <div>
+                <div class="typeTitle mb-3">Product Identity</div>
+                <div class="typeDesc">
+                  We provide custom visual identity design for your products,
+                  including logo design, packaging, and containers.
+                </div>
+              </div>
+            </div>
+            <div class="type mb-4 col-12 col-md-4">
+              <div>
+                <div class="typeTitle mb-3">Personal Identity</div>
+                <div class="typeDesc">
+                  This includes the design of business cards, letterhead, and
+                  visual elements.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End types of identity -->
+    <!-- Start Visual Identity Benefits -->
+    <div class="visualIdentityBenefits">
+      <div class="container">
+        <div class="visualIdentityBenefitsTitle position-relative text-center">
+          Benefits of Corporate Visual Identity
+        </div>
+      </div>
+      <div
+        class="container d-flex justify-content-between align-items-center gap-5"
+      >
+        <div class="benefitsImg">
+          <img src="../../images/brand.png" alt="brand" />
+        </div>
+        <div class="benefitsText">
+          <ul>
+            <li class="d-flex gap-2 justify-content-start align-items-start">
+              <img src="../../images/plus.svg" alt="plus" />
+              <p class="lh-1">Enhances brand awareness for your company.</p>
+            </li>
+            <li class="d-flex gap-2 justify-content-start align-items-start">
+              <img src="../../images/plus.svg" alt="plus" />
+              <p class="lh-1">
+                Increases customer trust and credibility in the company.
+              </p>
+            </li>
+            <li class="d-flex gap-2 justify-content-start align-items-start">
+              <img src="../../images/plus.svg" alt="plus" />
+              <p class="lh-1">
+                Makes it easier for customers to remember your brand compared to
+                competitors.
+              </p>
+            </li>
+            <li class="d-flex gap-2 justify-content-start align-items-start">
+              <img src="../../images/plus.svg" alt="plus" />
+              <p class="lh-1">
+                Positively strengthens your company's image through attractive
+                designs that suit your brand.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Visual Identity Benefits -->
     <!-- Start Visual Identity Steps -->
     <div class="visualIdentitySteps">
       <div class="container text-center">
@@ -157,91 +215,77 @@
           Steps for Creating a Visual Identity
         </div>
         <div class="steps row g-3">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">01</div>
-              <div class="stepDesc">
-                Understand the vision and mission that reflect the company's
-                goals.
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">01</div>
+                  <div class="stepDesc">
+                    Understand the vision and mission that reflect the company's
+                    goals.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">02</div>
+                  <div class="stepDesc">
+                    Understand the vision and mission that reflect the company's
+                    goals.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">03</div>
+                  <div class="stepDesc">
+                    Understand the vision and mission that reflect the company's
+                    goals.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">04</div>
+                  <div class="stepDesc">
+                    Understand the vision and mission that reflect the company's
+                    goals.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">05</div>
+                  <div class="stepDesc">
+                    Understand the vision and mission that reflect the company's
+                    goals.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">06</div>
+                  <div class="stepDesc">
+                    Understand the vision and mission that reflect the company's
+                    goals.
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">02</div>
-              <div class="stepDesc">
-                Understand the vision and mission that reflect the company's
-                goals.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">03</div>
-              <div class="stepDesc">
-                Understand the vision and mission that reflect the company's
-                goals.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">04</div>
-              <div class="stepDesc">
-                Understand the vision and mission that reflect the company's
-                goals.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">05</div>
-              <div class="stepDesc">
-                Understand the vision and mission that reflect the company's
-                goals.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">06</div>
-              <div class="stepDesc">
-                Understand the vision and mission that reflect the company's
-                goals.
-              </div>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
     </div>
     <!-- End Visual Identity Steps -->
-    <!-- Start Visual Identity Benefits -->
-    <div class="visualIdentityBenefits">
-      <div class="container">
-        <div class="visualIdentityBenefitsTitle position-relative text-center">
-          Benefits of Corporate Visual Identity
-        </div>
-        <ul>
-          <li>Enhances brand awareness for your company.</li>
-          <li>Increases customer trust and credibility in the company.</li>
-          <li>
-            Makes it easier for customers to remember your brand compared to
-            competitors.
-          </li>
-          <li>
-            Positively strengthens your company's image through attractive
-            designs that suit your brand.
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- End Visual Identity Benefits -->
     <!-- Start Visual Identity Reach Help -->
     <div class="reachHelp">
+      <div class="reachHelpQuestion text-center mb-5">
+        How Can Reach Company Help You Design a Visual Identity?
+      </div>
       <div class="container text-center">
-        <div class="reachHelpQuestion">
-          How Can Reach Company Help You Design a Visual Identity?
-        </div>
         <div class="reachHelpintro mb-5">
           If you're looking for a visual identity that sets you apart from
           competitors and strengthens your brand, <a>Reach</a> Company is your
@@ -267,9 +311,6 @@
             to the target market.
           </li>
         </ul>
-        <div class="reachHelpFigure">
-          <img src="../../images/reachHelpFigure.png" alt="figure" />
-        </div>
       </div>
     </div>
     <!-- End Visual Identity Reach Help -->
@@ -390,6 +431,8 @@
       </div>
     </footer>
     <!-- End Footer -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
     <script src="../../js/services.js"></script>
   </body>
 </html>
