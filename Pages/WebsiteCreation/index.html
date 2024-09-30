@@ -38,7 +38,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <!-- End Style -->
-    <title>Advertising Campaign</title>
+    <!--Start Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!--End Slider -->
+    <title>Website Creation</title>
   </head>
   <body>
     <!-- Start Navbar -->
@@ -93,24 +99,28 @@
     <!-- End Navbar -->
     <!-- Start Visual Identity -->
     <div class="visualIdentity">
+      <div class="right"></div>
       <div class="container">
         <div class="visualIdentityDesc text-center">
           <div class="title">How to program a website?</div>
-          <div class="desc">
-            <p>
-              Programming a website requires knowledge of a set of tools and
-              technologies used to design and develop pages and functionalities
-              that users can interact with. This method gives you full control
-              over the website's appearance and behavior, allowing you to create
-              specialized websites that meet the needs of your project
-            </p>
+          <div class="text">
+            <div class="desc">
+              <p>
+                Programming a website requires knowledge of a set of tools and
+                technologies used to design and develop pages and
+                functionalities that users can interact with. This method gives
+                you full control over the website's appearance and behavior,
+                allowing you to create specialized websites that meet the needs
+                of your project
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="typeOfIdentitiy">
       <div class="container">
-        <div class="title text-black lh-1 fs-1 mb-4 fw-bold">
+        <div class="title text-center lh-1 fs-1 mb-4 fw-bold">
           What is a website and how does it work?
         </div>
       </div>
@@ -129,7 +139,7 @@
           the server, allowing visitors to easily view the website’s pages.
         </div>
         <div class="typeOfIdentityImg">
-          <img src="../../images//MARKETING.png" alt="Visual Identity" />
+          <img src="../../images/-02.png" alt="Visual Identity" />
         </div>
       </div>
     </div>
@@ -137,7 +147,7 @@
     <!-- Start Visual Identity Reach Help -->
     <div class="reachHelp">
       <div class="container">
-        <div class="reachHelpQuestion text-center">
+        <div class="reachHelpTitle fw-bold mb-5 text-center">
           Steps to Create and Design a Website Using Custom Programming
         </div>
         <ul class="position-relative">
@@ -185,50 +195,57 @@
       <div class="container text-center">
         <div class="visualIdentityStepsTitle">Steps to Program a Website</div>
         <div class="steps row g-3">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">01</div>
-              <div class="stepDesc">
-                Planning Define the website's purpose and target audience, and
-                plan the design and features.
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">01</div>
+                  <div class="stepDesc">
+                    Planning Define the website's purpose and target audience,
+                    and plan the design and features.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">02</div>
+                  <div class="stepDesc">
+                    Writing Code Program the structure using HTML, style the
+                    design with CSS, and add interactivity with JavaScript.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">03</div>
+                  <div class="stepDesc">
+                    Back-End Development Set up the server and database, and
+                    write code to handle data and manage interactions.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">04</div>
+                  <div class="stepDesc">
+                    Testing Ensure the website functions properly across all
+                    devices and browsers.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">05</div>
+                  <div class="stepDesc">
+                    Deployment Upload the website to a web server to make it
+                    available to users online.
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">02</div>
-              <div class="stepDesc">
-                Writing Code Program the structure using HTML, style the design
-                with CSS, and add interactivity with JavaScript.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">03</div>
-              <div class="stepDesc">
-                Back-End Development Set up the server and database, and write
-                code to handle data and manage interactions.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">04</div>
-              <div class="stepDesc">
-                Testing Ensure the website functions properly across all devices
-                and browsers.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">05</div>
-              <div class="stepDesc">
-                Deployment Upload the website to a web server to make it
-                available to users online.
-              </div>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -236,11 +253,10 @@
     <!-- End Visual Identity Steps -->
     <!-- Start How to Choose -->
     <div class="howToChoose">
+      <div class="reachHelpQuestion shapes text-center mb-4">
+        What are the advantages of creating a website using custom programming?
+      </div>
       <div class="container">
-        <div class="reachHelpQuestion shapes text-center mb-4">
-          What are the advantages of creating a website using custom
-          programming?
-        </div>
         <div class="titleDesc text-center mb-4">
           When designing a website through custom programming, it offers several
           advantages that make it more efficient and tailored to your needs. The
@@ -370,10 +386,10 @@
     <!-- End How to Choose -->
     <!-- Start How to Choose -->
     <div class="howToChoose">
+      <div class="reachHelpQuestion text-center mb-4">
+        When should you choose custom programming for your website design?
+      </div>
       <div class="container">
-        <div class="reachHelpQuestion2 text-center mb-4">
-          When should you choose custom programming for your website design?
-        </div>
         <div class="titleDesc mb-4">
           You should opt for custom programming if:
         </div>
@@ -568,6 +584,8 @@
       </div>
     </footer>
     <!-- End Footer -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
     <script src="../../js/services.js"></script>
   </body>
 </html>

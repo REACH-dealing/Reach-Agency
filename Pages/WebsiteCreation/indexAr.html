@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,7 +44,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <!-- End Style -->
-    <title>خدماتنا</title>
+    <!--Start Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!--End Slider -->
+    <title>انشاء المواقع</title>
   </head>
   <body>
     <!-- Start Navbar -->
@@ -100,23 +106,26 @@
     <!-- End Navbar -->
     <!-- Start Visual Identity -->
     <div class="visualIdentity" dir="rtl">
+      <div class="right"></div>
       <div class="container">
         <div class="visualIdentityDesc text-center">
           <div class="title">كيفية برمجة موقع إلكتروني متكامل؟</div>
-          <div class="desc">
-            <p>
-              تتطلب برمجة موقع إلكتروني معرفة مجموعة من الأدوات والتقنيات
-              المستخدمة لتصميم وتطوير الصفحات والوظائف التي يمكن للمستخدمين
-              التفاعل معاها ، تمنحك هذه الطريقة تحكم كامل في مظهر الموقع وسلوكه
-              وتتيح لك إنشاء مواقع متخصصة تلبي احتياجات مشروعك.
-            </p>
+          <div class="text">
+            <div class="desc">
+              <p>
+                تتطلب برمجة موقع إلكتروني معرفة مجموعة من الأدوات والتقنيات
+                المستخدمة لتصميم وتطوير الصفحات والوظائف التي يمكن للمستخدمين
+                التفاعل معاها ، تمنحك هذه الطريقة تحكم كامل في مظهر الموقع
+                وسلوكه وتتيح لك إنشاء مواقع متخصصة تلبي احتياجات مشروعك.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="typeOfIdentitiy" dir="rtl" x>
+    <div class="typeOfIdentitiy" dir="rtl">
       <div class="container">
-        <div class="title text-black lh-1 fs-1 mb-4 fw-bold">
+        <div class="title text-center lh-1 fs-1 mb-4 fw-bold">
           ما المقصود بالموقع الإلكتروني وآلية عمله؟
         </div>
       </div>
@@ -134,7 +143,7 @@
           للزوار بعرض صفحات الموقع بسهولة.
         </div>
         <div class="typeOfIdentityImg">
-          <img src="../../images/MARKETING.png" alt="Visual Identity" />
+          <img src="../../images/-02.png" alt="Visual Identity" />
         </div>
       </div>
     </div>
@@ -142,22 +151,21 @@
     <!-- Start Visual Identity Reach Help -->
     <div class="reachHelp" dir="rtl">
       <div class="container">
-        <div class="reachHelpQuestion text-center">
+        <div class="reachHelpTitle fw-bold mb-5 text-center">
           خطوات إنشاء وتصميم موقع الكتروني بواسطة البرمجة الخاصة
         </div>
         <ul class="position-relative">
-          <li class="d-flex justify-content-start align-items-center gap-4">
+          <li class="d-flex justify-content-start align-items-start gap-4">
             <span class="numbering">
               <span></span>
               <span>01</span>
             </span>
             <p>
-              <strong>تصميم الواجهة (UI/UX):</strong>
-              تصميم تجربة المستخدم وتخطيط واجهة الاستخدام باستخدام أدوات مثل
-              Adobe XD أو Figma.
+              <strong>تصميم الواجهة (UI/UX):</strong> تصميم تجربة المستخدم
+              وتخطيط واجهة الاستخدام باستخدام أدوات مثل Adobe XD أو Figma.
             </p>
           </li>
-          <li class="d-flex justify-content-start align-items-center gap-4">
+          <li class="d-flex justify-content-start align-items-start gap-4">
             <span class="numbering">
               <span></span>
               <span>02</span>
@@ -169,10 +177,10 @@
               على لغات البرمجة ( HTML/ CSS/ JavaScript/ Bootstrap).
             </p>
           </li>
-          <li class="d-flex justify-content-start align-items-center gap-4">
+          <li class="d-flex justify-content-start align-items-start gap-4">
             <span class="numbering">
               <span></span>
-              <span>03</span>
+              <span>02</span>
             </span>
             <p>
               <strong>الواجهة الخلفية (Back-End):</strong> هي الجزء الذي لا يراه
@@ -188,50 +196,57 @@
       <div class="container text-center">
         <div class="visualIdentityStepsTitle">خطوات برمجة موقع إلكتروني:</div>
         <div class="steps row g-3">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">01</div>
-              <div class="stepDesc">
-                التخطيط: تحديد هدف الموقع والجمهور المستهدف، وتخطيط التصميم
-                والميزات.
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">01</div>
+                  <div class="stepDesc">
+                    التخطيط: تحديد هدف الموقع والجمهور المستهدف، وتخطيط التصميم
+                    والميزات.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">02</div>
+                  <div class="stepDesc">
+                    كتابة الكود: برمجة الهيكل باستخدام HTML، وتنسيق التصميم
+                    باستخدام CSS، وإضافة التفاعلات باستخدام JavaScript.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">03</div>
+                  <div class="stepDesc">
+                    التطوير الخلفي: إعداد الخادم وقاعدة البيانات، وكتابة الأكواد
+                    لمعالجة البيانات والتحكم في التفاعلات.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">04</div>
+                  <div class="stepDesc">
+                    الاختبار: التأكد من أن الموقع يعمل بشكل صحيح على جميع
+                    الاجهزة والمتصفحات.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">05</div>
+                  <div class="stepDesc">
+                    النشر: رفع الموقع على خادم ويب ليكون متاحًا للمستخدمين عبر
+                    الإنترنت.
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">02</div>
-              <div class="stepDesc">
-                كتابة الكود: برمجة الهيكل باستخدام HTML، وتنسيق التصميم باستخدام
-                CSS، وإضافة التفاعلات باستخدام JavaScript.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">03</div>
-              <div class="stepDesc">
-                التطوير الخلفي: إعداد الخادم وقاعدة البيانات، وكتابة الأكواد
-                لمعالجة البيانات والتحكم في التفاعلات.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">04</div>
-              <div class="stepDesc">
-                الاختبار: التأكد من أن الموقع يعمل بشكل صحيح على جميع الاجهزة
-                والمتصفحات.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">05</div>
-              <div class="stepDesc">
-                النشر: رفع الموقع على خادم ويب ليكون متاحًا للمستخدمين عبر
-                الإنترنت.
-              </div>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -239,10 +254,10 @@
     <!-- End Visual Identity Steps -->
     <!-- Start How to Choose -->
     <div class="howToChoose" dir="rtl">
+      <div class="reachHelpQuestion shapes text-center mb-4">
+        ما هي مميزات إنشاء موقع إلكتروني باستخدام البرمجة الخاصة؟
+      </div>
       <div class="container">
-        <div class="reachHelpQuestion shapes text-center mb-4">
-          ما هي مميزات إنشاء موقع إلكتروني باستخدام البرمجة الخاصة؟
-        </div>
         <div class="titleDesc text-center mb-4">
           عند تصميم موقع الكتروني بواسطة البرمجة الخاصة، فإن ذلك يمنح الموقع
           مجموعة من المميزات التي تجعله أكثر كفاءة وتخصيصًا، ومن أهم هذه
@@ -251,7 +266,7 @@
         <div class="howToList mb-5">
           <ul>
             <li
-              class="mb-3 d-flex justify-content-start align-items-start gap-2"
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
             >
               <span
                 ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
@@ -262,7 +277,7 @@
               </p>
             </li>
             <li
-              class="mb-3 d-flex justify-content-start align-items-start gap-2"
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
             >
               <span
                 ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
@@ -274,7 +289,7 @@
               </p>
             </li>
             <li
-              class="mb-3 d-flex justify-content-start align-items-start gap-2"
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
             >
               <span
                 ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
@@ -285,7 +300,7 @@
               </p>
             </li>
             <li
-              class="mb-3 d-flex justify-content-start align-items-start gap-2"
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
             >
               <span
                 ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
@@ -296,7 +311,7 @@
               </p>
             </li>
             <li
-              class="mb-3 d-flex justify-content-start align-items-start gap-2"
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
             >
               <span
                 ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
@@ -307,7 +322,7 @@
               </p>
             </li>
             <li
-              class="mb-3 d-flex justify-content-start align-items-start gap-2"
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
             >
               <span
                 ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
@@ -318,7 +333,7 @@
               </p>
             </li>
             <li
-              class="mb-3 d-flex justify-content-start align-items-start gap-2"
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
             >
               <span
                 ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
@@ -330,7 +345,7 @@
               </p>
             </li>
             <li
-              class="mb-3 d-flex justify-content-start align-items-start gap-2"
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
             >
               <span
                 ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
@@ -342,18 +357,18 @@
               </p>
             </li>
             <li
-              class="mb-3 d-flex justify-content-start align-items-start gap-2"
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
             >
               <span
                 ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
               /></span>
               <p>
-                <strong>الأمان المعزز:</strong> يمكنك بناء طبقات أمان قوية
+                <strong>الأمان المعزز: </strong> يمكنك بناء طبقات أمان قوية
                 لحماية الموقع من الاختراقات والتهديدات الإلكترونية.
               </p>
             </li>
             <li
-              class="mb-3 d-flex justify-content-start align-items-start gap-2"
+              class="mb-3 d-flex justify-content-start align-items-center gap-2"
             >
               <span
                 ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
@@ -370,11 +385,11 @@
     <!-- End How to Choose -->
     <!-- Start How to Choose -->
     <div class="howToChoose" dir="rtl">
+      <div class="reachHelpQuestion text-center mb-4">
+        متى يجب عليك اختيار البرمجة الخاصة عند تصميم موقعك الإلكتروني؟
+      </div>
       <div class="container">
-        <div class="reachHelpQuestion2 text-center mb-4">
-          متى يجب عليك اختيار البرمجة الخاصة عند تصميم موقعك الإلكتروني؟
-        </div>
-        <div class="titleDesc mb-4">يجب أن تختار البرمجة الخاصة إذا كنت:</div>
+        <div class="titleDesc mb-4">إذا كنت :</div>
         <div class="howToList mb-5 me-lg-5 ms-lg-5">
           <ul>
             <li
@@ -421,7 +436,7 @@
                   alt="Bullet"
                   class="me-3"
               /></span>
-              <p>آمن الموقع يمثل أولوية لمشروعك.</p>
+              <p>أمن الموقع يمثل أولوية لمشروعك.</p>
             </li>
           </ul>
         </div>
@@ -437,6 +452,7 @@
         </div>
       </div>
     </div>
+
     <!-- End How to Choose -->
     <!-- Start Footer -->
     <footer id="contactUs" dir="rtl">
@@ -529,7 +545,7 @@
             <ul>
               <li><a href="../ArtProduction/indexAr.html">إنتاج فني</a></li>
               <li>
-                <a href="../VisualIdentity/indexAr.html">تصميم هوية بصرية</a>
+                <a href="./indexAr.html">تصميم هوية بصرية</a>
               </li>
               <li><a href="#">تصميم المتاجر الإلكترونية</a></li>
               <li>
@@ -548,13 +564,19 @@
                   >إدارة منصات التواصل الاجتماعي</a
                 >
               </li>
-              <li><a href="#">انشاء وتصميم المواقع الالكترونية</a></li>
+              <li>
+                <a href="../WebsiteCreation/indexAr.html"
+                  >انشاء وتصميم المواقع الالكترونية</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
     <!-- End Footer -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
     <script src="../../js/services.js"></script>
   </body>
 </html>

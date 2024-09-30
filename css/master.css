@@ -126,6 +126,9 @@ ul li {
 /* Start Home Section */
 .home {
   gap: 30px;
+  background-color: #f580204d;
+  border-radius: 30px;
+  margin: 30px 50px;
 }
 .vision {
   width: 50%;
@@ -181,6 +184,9 @@ ul li {
   }
   .section:not(.section.services) {
     padding: 0 10px;
+  }
+  .home {
+    margin: 20px 20px 50px;
   }
 }
 
