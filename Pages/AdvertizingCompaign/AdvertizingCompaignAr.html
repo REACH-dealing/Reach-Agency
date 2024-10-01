@@ -44,7 +44,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <!-- End Style -->
-    <title>خدماتنا</title>
+    <!--Start Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!--End Slider -->
+    <title>Advertising Campaign</title>
   </head>
   <body>
     <!-- Start Navbar -->
@@ -76,12 +82,42 @@
               >عن ريتش</a
             >
           </li>
-          <li class="me-md-4">
-            <a
-              href="../../indexAr.html#services"
-              class="text-decoration-none text-white activeSection"
-              >خدماتنا</a
-            >
+          <li class="me-md-4 position-relative text-center" id="servicesMenu">
+            <a href="#services" class="text-decoration-none text-white"
+              >خدماتنا <img src="../../images/arrowDown.png" alt="down"
+            /></a>
+            <ul class="subMenu" id="subMenu">
+              <li class="subMenuItem">
+                <a href="../VisualIdentity/indexAr.html">الهوية البصرية</a>
+              </li>
+              <li class="subMenuItem">
+                <a href="./AdvertizingCompaignAr.html"
+                  >إدارة وانشاء الحملات الإعلانية</a
+                >
+              </li>
+              <li class="subMenuItem">
+                <a href="../SocialMediaPlatform/SocialMediaPlatformAr.html"
+                  >إدارة منصات التواصل الاجتماعي
+                </a>
+              </li>
+              <li class="subMenuItem">
+                <a href="../ArtProduction/indexAr.html">انتاج فني</a>
+              </li>
+              <li class="subMenuItem">
+                <a href="#">تصميم المتاجر الإلكترونية</a>
+              </li>
+              <li class="subMenuItem">
+                <a href="#">تحسين محركات البحث</a>
+              </li>
+              <li class="subMenuItem">
+                <a href="../WebsiteCreation/indexAr.html"
+                  >انشاء وتصميم المواقع الالكترونية</a
+                >
+              </li>
+              <li class="subMenuItem">
+                <a href="#">تصميم وتطوير تطبيقات الهواتف</a>
+              </li>
+            </ul>
           </li>
           <li class="me-md-4">
             <a href="#contactUs" class="text-decoration-none text-white"
@@ -99,18 +135,21 @@
     </nav>
     <!-- End Navbar -->
     <!-- Start Visual Identity -->
-    <div class="visualIdentity">
+    <div class="visualIdentity" dir="rtl">
+      <div class="right"></div>
       <div class="container">
         <div class="visualIdentityDesc text-center">
-          <div class="title">كيفية انشاء وادارة الحملات الاعلانية للشركات</div>
-          <div class="question">تعريف الحملات الإعلانية</div>
-          <div class="desc">
-            <p>
-              تُعد الحملات الإعلانية أحد عناصر استراتيجيات التسويق، حيث تُساهم
-              في تعزيز الوعي بالعلامة التجارية وزيادة معدل المبيعات . تهدف
-              الحملات الإعلانية إلى جذب انتباه الجمهور المستهدف من خلال رسائل
-              مُصممة بدقة، مما يساعد على بناء علاقة قوية مع العملاء.
-            </p>
+          <div class="title">كيفية انشاء وادارة الحملات الاعلانية للشركات؟</div>
+          <div class="text">
+            <div class="question">تعريف الحملات الإعلانية</div>
+            <div class="desc">
+              <p>
+                تُعد الحملات الإعلانية أحد عناصر استراتيجيات التسويق، حيث تُساهم
+                في تعزيز الوعي بالعلامة التجارية وزيادة معدل المبيعات . تهدف
+                الحملات الإعلانية إلى جذب انتباه الجمهور المستهدف من خلال رسائل
+                مُصممة بدقة، مما يساعد على بناء علاقة قوية مع العملاء.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -119,47 +158,54 @@
       <div
         class="container d-flex justify-content-between align-items-center gap-3"
       >
-        <div class="text">
-          <div class="title">أنواع الحملات الإعلانية</div>
-          <div class="types">
-            <div class="type mb-4">
-              <div class="typeTitle">
-                حملات الإعلانية عبر منصات التواصل الاجتماعي
-              </div>
-              <div class="typeDesc">
-                تستهدف هذه الحملات العملاء عبر منصات التواصل الاجتماعي مثل:
-                فيسبوك، انستقرام، سناب شات، تيك توك، تويتر، و لينكدإن. يمكنك
-                استهداف عملائك بدقة بناءً على اهتماماتهم وسلوكياتهم لزيادة
-                التفاعل وبناء وعي قوي بالعلامة التجارية.
-              </div>
-            </div>
-            <div class="type mb-4">
-              <div class="typeTitle">
-                حملات الإعلانية عبر محركات البحث واليوتيوب
-              </div>
-              <div class="typeDesc">
-                تُعتبر الإعلانات عبر محركات البحث واليوتيوب من استراتيجيات
-                التسويق الرقمي التي تساعدك على الوصول إلى الجمهور المستهدف
-                المناسب من خلال رسالة إعلانية قوية. هذه الحملات تتيح لك الظهور
-                في نتائج البحث على جوجل ومحركات البحث الأخرى، بالإضافة الى
-                الإعلانات على منصة اليوتيوب، التي تساعد في زيادة الوعي بعلامتك
-                التجارية من خلال محتوى الفيديو.
+        <div class="text d-grid g-3">
+          <div class="title row text-center m-auto mb-4">
+            أنواع الحملات الإعلانية
+          </div>
+          <div class="types row">
+            <div class="type mb-4 col-12 col-md-4">
+              <div>
+                <div class="typeTitle mb-3">
+                  حملات الإعلانية عبر منصات التواصل الاجتماعي
+                </div>
+                <div class="typeDesc">
+                  تستهدف هذه الحملات العملاء عبر منصات التواصل الاجتماعي مثل:
+                  فيسبوك، انستقرام، سناب شات، تيك توك، تويتر، و لينكدإن. يمكنك
+                  استهداف عملائك بدقة بناءً على اهتماماتهم وسلوكياتهم لزيادة
+                  التفاعل وبناء وعي قوي بالعلامة التجارية.
+                </div>
               </div>
             </div>
-            <div class="type mb-4">
-              <div class="typeTitle">حملات الإعلانية عبر البريد الالكتروني</div>
-              <div class="typeDesc">
-                تعتبر الحملات الإعلانية عبر البريد الإلكتروني من أقدم وأقوى
-                الحملات الاعلانية في استهداف العملاء، حيث تتيح لك الوصول مباشرة
-                إلى صندوق بريد العملاء المستهدفين من خلال استراتيجيات مخصصة
-                لتصميم الرسائل وتوقيت الإرسال، تساهم هذه الحملات في تعزيز ولاء
-                العملاء.
+            <div class="type mb-4 col-12 col-md-4">
+              <div>
+                <div class="typeTitle mb-3">
+                  حملات الإعلانية عبر محركات البحث واليوتيوب
+                </div>
+                <div class="typeDesc">
+                  تُعتبر الإعلانات عبر محركات البحث واليوتيوب من استراتيجيات
+                  التسويق الرقمي التي تساعدك على الوصول إلى الجمهور المستهدف
+                  المناسب من خلال رسالة إعلانية قوية. هذه الحملات تتيح لك الظهور
+                  في نتائج البحث على جوجل ومحركات البحث الأخرى، بالإضافة الى
+                  الإعلانات على منصة اليوتيوب، التي تساعد في زيادة الوعي بعلامتك
+                  التجارية من خلال محتوى الفيديو.
+                </div>
+              </div>
+            </div>
+            <div class="type mb-4 col-12 col-md-4">
+              <div>
+                <div class="typeTitle mb-3">
+                  حملات الإعلانية عبر البريد الالكتروني
+                </div>
+                <div class="typeDesc">
+                  تعتبر الحملات الإعلانية عبر البريد الإلكتروني من أقدم وأقوى
+                  الحملات الاعلانية في استهداف العملاء، حيث تتيح لك الوصول
+                  مباشرة إلى صندوق بريد العملاء المستهدفين من خلال استراتيجيات
+                  مخصصة لتصميم الرسائل وتوقيت الإرسال، تساهم هذه الحملات في
+                  تعزيز ولاء العملاء.
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="typeOfIdentityImg">
-          <img src="../../images/brand.png" alt="Visual Identity" />
         </div>
       </div>
     </div>
@@ -171,80 +217,81 @@
           كيفية إدارة الحملات الإعلانية؟
         </div>
         <div class="steps row g-3">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">01</div>
-              <div class="stepDesc">
-                تحديد الأهداف الرئيسية لحملتك الاعلانية مثل زيادة الوعي بالعلامة
-                التجارية أو تعزيز معدل المبيعات
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">01</div>
+                  <div class="stepDesc">
+                    تحديد الأهداف الرئيسية لحملتك الاعلانية مثل زيادة الوعي
+                    بالعلامة التجارية أو تعزيز معدل المبيعات
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">02</div>
+                  <div class="stepDesc">
+                    دراسة اهتمامات وسلوكيات جمهورك المستهدف
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">03</div>
+                  <div class="stepDesc">
+                    اختيار القنوات الإعلانية التي تناسب أهدافك وجمهورك
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">04</div>
+                  <div class="stepDesc">تصميم رسالة إعلانية قوية</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">05</div>
+                  <div class="stepDesc">تنفيذ ومتابعة حملتك الاعلانية</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="step">
+                  <div class="stepNumber">06</div>
+                  <div class="stepDesc">تحليل أداء الحملة الإعلانية</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">02</div>
-              <div class="stepDesc">
-                دراسة اهتمامات وسلوكيات جمهورك المستهدف
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">03</div>
-              <div class="stepDesc">
-                اختيار القنوات الإعلانية التي تناسب أهدافك وجمهورك
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">04</div>
-              <div class="stepDesc">تصميم رسالة إعلانية قوية</div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">05</div>
-              <div class="stepDesc">تنفيذ ومتابعة حملتك الاعلانية</div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="step">
-              <div class="stepNumber">06</div>
-              <div class="stepDesc">تحليل أداء الحملة الإعلانية</div>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
     </div>
     <!-- End Visual Identity Steps -->
     <!-- Start Visual Identity Benefits -->
-    <div class="visualIdentityBenefits">
-      <div class="container">
-        <div class="visualIdentityBenefitsTitle position-relative text-center">
-          ما أهداف الحملة الإعلانية؟
+    <div class="visualIdentityBenefits" dir="rtl">
+      <div class="visualIdentityBenefitsTitle position-relative text-center">
+        ما أهداف الحملة الإعلانية؟
+      </div>
+      <div
+        class="container d-flex justify-content-center gap-3 align-items-center"
+      >
+        <div class="text-center">
+          <div class="mb-5 position-relative">
+            زيادة الوعي بالعلامة التجارية
+          </div>
+          <div class="mb-5 position-relative">تعزيز معدل المبيعات</div>
+          <div class="position-relative">زيادة عدد المتابعين</div>
         </div>
-        <div class="row">
-          <div class="row text-center p-0 m-auto mb-5">
-            <div class="col-12 underLine text-center">
-              زيادة الوعي بالعلامة التجارية
-            </div>
-          </div>
-          <div class="row p-0 m-auto d-flex align-items-end">
-            <div class="col-12 col-md-4 mb-5 mb-md-0 underLine text-center">
-              تعزيز معدل المبيعات
-            </div>
-            <div class="col-4 d-none d-md-block text-center">
-              <img
-                src="../../images/Advertizing.png"
-                alt="Advertizing Campaign"
-                class="w-100"
-              />
-            </div>
-            <div class="col-12 col-md-4 underLine text-center">
-              زيادة عدد المتابعين
-            </div>
-          </div>
+        <div class="benefitsImg">
+          <img
+            src="../../images/Advertizing.png"
+            alt="Advertizing Campaign"
+            class="w-100"
+          />
         </div>
       </div>
     </div>
@@ -317,12 +364,12 @@
     </div>
     <!-- End Visual Identity Reach Help -->
     <!-- Start How to Choose -->
-    <div class="howToChoose" dir="rtl">
+    <div class="howToChoose2" dir="rtl">
+      <div class="reachHelpQuestion2 text-center mb-4">
+        كيف تختار الشركة المناسبة لإدارة حملتك الإعلانية؟
+      </div>
       <div class="container">
-        <div class="reachHelpQuestion text-center mb-4">
-          كيف تختار الشركة المناسبة لإدارة حملتك الإعلانية؟
-        </div>
-        <div class="howToList">
+        <div class="howToList2">
           <ul>
             <li
               class="mb-3 d-flex justify-content-start align-items-center gap-2"
@@ -338,7 +385,7 @@
               <span
                 ><img src="../../images/howTo.png" alt="Bullet" class="me-3"
               /></span>
-              تأكد من معرفة خبرات ومهارات الشركة في إدارة الحملات الإعلانية.
+              تأكد من معرفة خبرات ومهارات الشركة في إدارة الحملات الإعلانية
             </li>
             <li
               class="mb-3 d-flex justify-content-start align-items-center gap-2"
@@ -377,7 +424,7 @@
             </li>
           </ul>
         </div>
-        <div class="howToFooter text-center mt-5 mb-5">
+        <div class="howToFooter2 text-center mt-5 mb-5">
           <p>
             باختيارك شركة ريتش لإدارة حملتك الإعلانية وتحقيق الخطوة الأولى نحو
             تحقيق أهدافك، لضمان نجاح حملتك وتحقيق أعلى عائد على استثمارك
@@ -477,7 +524,7 @@
             <ul>
               <li><a href="../ArtProduction/indexAr.html">إنتاج فني</a></li>
               <li>
-                <a href="../VisualIdentity/indexAr.html">تصميم هوية بصرية</a>
+                <a href="./indexAr.html">تصميم هوية بصرية</a>
               </li>
               <li><a href="#">تصميم المتاجر الإلكترونية</a></li>
               <li>
@@ -507,6 +554,8 @@
       </div>
     </footer>
     <!-- End Footer -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
     <script src="../../js/services.js"></script>
   </body>
 </html>

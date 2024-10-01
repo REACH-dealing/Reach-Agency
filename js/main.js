@@ -41,3 +41,6 @@ const toggleIcone = document.querySelector(".toggleIcon");
 toggleIcone.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
+
+const subMenu = document.querySelector(".subMenu");
+const servicesMenu = document.querySelector("#servicesMenu");
