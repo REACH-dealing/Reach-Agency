@@ -262,7 +262,7 @@ ul li {
 .aboutBigText span::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -7px;
   left: 0;
   width: 105%;
   height: 2px;
