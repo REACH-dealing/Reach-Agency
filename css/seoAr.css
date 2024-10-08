@@ -1,0 +1,349 @@
+* {
+  font-family: "Cairo", sans-serif;
+}
+.visualIdentity {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 85px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.visualIdentity::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  background-color: #e0e3e1;
+  border-top-right-radius: 320px;
+}
+.visualIdentity .right {
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid gray;
+  border-bottom-left-radius: 200px;
+}
+.visualIdentity .right::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  top: -20px;
+  left: 20px;
+  background-color: #ffd7b6;
+  border-bottom-left-radius: 200px;
+  z-index: -1;
+}
+.visualIdentityDesc .text {
+  width: 50%;
+  text-align: start;
+}
+.visualIdentityDesc .title,
+.visualIdentityStepsTitle,
+.visualIdentityBenefitsTitle,
+.reachHelpQuestion,
+.reachHelpQuestion2,
+.difference .differenceTitle {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 100px;
+
+  position: relative;
+}
+.visualIdentityDesc .title::before {
+  content: "";
+  position: absolute;
+  width: 122.19px;
+  height: 19.5px;
+  background-image: url("../images/shape_57.png");
+  background-size: cover;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.visualIdentityDesc .question {
+  color: #f58020;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+}
+.visualIdentityDesc .desc {
+  position: relative;
+}
+.visualIdentityDesc .desc a,
+.reachHelp .reachHelpintro a {
+  color: #f58020;
+  text-decoration: underline;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .visualIdentityDesc .desc::before {
+    right: -18px;
+  }
+  .visualIdentityDesc .desc::after {
+    left: -18px;
+  }
+}
+@media (max-width: 991px) {
+  .visualIdentityDesc .desc::before,
+  .visualIdentityDesc .desc::after {
+    width: 63.51px;
+    height: 58.73px;
+    top: 50%;
+    transform: translateY(-100%);
+  }
+  .visualIdentityDesc .desc::before {
+    right: 0;
+  }
+  .visualIdentityDesc .desc::after {
+    left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .visualIdentity .text {
+    width: 100%;
+    text-align: center;
+  }
+  .visualIdentity .right {
+    display: none;
+  }
+  .visualIdentity::before {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+@media (max-width: 576px) {
+  .visualIdentityDesc .desc {
+    padding: 0;
+  }
+  .visualIdentityDesc .desc::before,
+  .visualIdentityDesc .desc::after {
+    display: none;
+  }
+}
+/* Types Of Identity */
+.typeOfIdentitiy,
+.visualIdentitySteps,
+.visualIdentityBenefits,
+.reachHelp {
+  padding: 80px 0;
+}
+.typeOfIdentitiy .container .title {
+  color: #f58020;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #727171;
+}
+.typeOfIdentitiy .container .titleDesc {
+  color: #4c4a44;
+  font-size: 20px;
+  font-weight: 700;
+}
+.typeOfIdentitiy .container .typesText {
+  width: 50%;
+}
+.typeOfIdentitiy .container .typesImg {
+  width: 50%;
+  text-align: center;
+}
+.typeOfIdentitiy .container .typesImg img {
+  width: 100%;
+  max-width: 400px;
+}
+@media (max-width: 991px) {
+  .typeOfIdentitiy .container .title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .typeOfIdentitiy .container .typesText {
+    width: 100%;
+  }
+}
+/* Start Differences */
+.difference .differenceTitle {
+  color: #f58020;
+}
+.difference .differenceContent .row > div > div {
+  background-color: #feb87e;
+  padding: 20px;
+  color: white;
+  height: 100%;
+}
+/* Start Visual Identity */
+.visualIdentityStepsTitle {
+  margin-bottom: 20px;
+  color: #f58020;
+}
+.steps .step {
+  border: 1px solid #f580204d;
+  border-radius: 8px;
+  padding: 40px;
+  height: 100%;
+  color: #727171;
+}
+.steps .step .stepNumber {
+  color: #f58020;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.steps .step .stepDesc {
+  font-size: 20px;
+}
+.swiper {
+  width: 100%;
+  padding: 20px 50px 50px !important;
+}
+.swiper-slide {
+  border: none !important;
+  border-radius: 6px;
+  padding: 1px;
+  height: auto !important;
+  background-color: white;
+  text-align: center;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px !important;
+  font-weight: bold;
+}
+.swiper-pagination-bullet-active {
+  background: #f58020 !important;
+}
+
+/* Start Visual Identity React Help */
+.howToChoose .container .titleDesc,
+.reachHelp .container .titleDesc {
+  color: #f58020;
+  font-size: 20px;
+  font-weight: 700;
+}
+.reachHelpQuestion {
+  padding: 20px;
+}
+.reachHelpQuestion {
+  margin: auto;
+  margin-bottom: 10px;
+}
+.reachHelp .reachHelpContent .reachHelpContentNode div:nth-child(2) {
+  position: relative;
+}
+.reachHelp .reachHelpContent .reachHelpContentNode div:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  height: 115%;
+  width: 1px;
+  border: 1px dashed #ffb87e;
+  right: -60px;
+  top: 10px;
+}
+.reachHelp .reachHelpFooter {
+  color: #f58020;
+  font-size: 20px;
+}
+.shapes {
+  padding: 0 130px;
+}
+.reachHelpintro {
+  font-weight: 500;
+}
+.reachHelp ul li {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.reachHelpFigure {
+  width: 320px;
+  margin: auto;
+}
+.reachHelpFigure img {
+  width: 100%;
+}
+.numbering {
+  position: relative;
+  display: inline-block;
+}
+.numbering span:first-child {
+  display: inline-block;
+  background-color: #f58020d9;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  line-height: 75px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  box-shadow: 0 0 1px 1px white inset;
+  filter: blur(10px);
+}
+.numbering span:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+.reachHelpQuestion ul li {
+  line-height: 1.3;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .reachHelpFigure {
+    width: 200px;
+  }
+  .reachHelp ul {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+.howToChoose {
+  font-size: 20px;
+}
+.reachHelpQuestion {
+  margin-bottom: 10px;
+  position: relative;
+  padding: 30px 0;
+}
+.reachHelp ul li {
+  margin-bottom: 30px;
+}
+.reachHelp ul {
+  margin: auto;
+}
+.howToFooter {
+  color: #f58020;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Compined media queries */
+@media (max-width: 767px) {
+  .visualIdentityDesc .title,
+  .visualIdentityStepsTitle,
+  .visualIdentityBenefitsTitle,
+  .reachHelpQuestion,
+  .reachHelpQuestion2,
+  .difference .differenceTitle {
+    font-size: 28px;
+  }
+  .steps .step .stepNumber {
+    font-size: 32px;
+  }
+}

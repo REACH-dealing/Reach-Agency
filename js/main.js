@@ -1,3 +1,13 @@
+const navbar = document.querySelector(".links");
+const toggleIcone = document.querySelector(".toggleIcon");
+console.log(toggleIcone);
+console.log(navbar);
+
+toggleIcone.addEventListener("click", () => {
+  console.log(navbar);
+  navbar.classList.toggle("active");
+});
+
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   // direction: "horizontal",
@@ -33,13 +43,6 @@ const swiper = new Swiper(".swiper", {
       spaceBetween: 50,
     },
   },
-});
-
-const navbar = document.querySelector(".links");
-const toggleIcone = document.querySelector(".toggleIcon");
-
-toggleIcone.addEventListener("click", () => {
-  navbar.classList.toggle("active");
 });
 
 const subMenu = document.querySelector(".subMenu");
