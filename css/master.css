@@ -405,10 +405,13 @@ footer {
   justify-content: flex-start;
   gap: 100px;
 }
-.footerServices div:nth-child(2),
 .footerServices div:nth-child(3),
 .footerServices ul li {
   display: inline-block;
+}
+.footerServices div:nth-child(2) {
+  display: flex;
+  gap: 30px;
 }
 
 @media (max-width: 768px) {
