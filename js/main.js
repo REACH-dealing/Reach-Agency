@@ -47,3 +47,36 @@ const swiper = new Swiper(".swiper", {
 
 const subMenu = document.querySelector(".subMenu");
 const servicesMenu = document.querySelector("#servicesMenu");
+
+document
+  .getElementById("my-form-button")
+  .addEventListener("click", async function (event) {
+    event.preventDefault(); // Prevent the default form submission
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    const responseMessage = document.getElementById("my-form-status");
+
+    try {
+      const response = await fetch("https://formspree.io/f/mnnqvnol", {
+        method: "POST",
+        body: JSON.stringify({ email, message }),
+        headers: {
+          Accept: "application/json",
+        },
+      });
+      console.log(response);
+
+      if (response.status === 200) {
+        responseMessage.innerHTML = "sent successfully.";
+        responseMessage.style.color = "green";
+      } else {
+        // throw new Error("Form submission failed.");
+        responseMessage.innerHTML = "problem sending your message.";
+        responseMessage.style.color = "red";
+      }
+    } catch (error) {
+      console.log(error);
+      responseMessage.innerHTML = "problem sending your message.";
+      responseMessage.style.color = "red";
+    }
+  });
