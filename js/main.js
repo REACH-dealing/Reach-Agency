@@ -57,7 +57,7 @@ document
     const responseMessage = document.getElementById("my-form-status");
 
     try {
-      const response = await fetch("https://formspree.io/f/mnnqvnol", {
+      const response = await fetch("https://formspree.io/f/xwpkqpny", {
         method: "POST",
         body: JSON.stringify({ email, message }),
         headers: {
