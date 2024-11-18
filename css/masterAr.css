@@ -459,7 +459,7 @@ footer {
     transform: translateX(0px);
   }
   to {
-    transform: translateX(-88.5%);
+    transform: translateX(88.5%);
   }
 }
 @media (max-width: 1200px) {
