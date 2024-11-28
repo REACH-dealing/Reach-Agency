@@ -452,7 +452,7 @@ footer {
   padding: 10px;
 }
 .card .icon img {
-  width: 300px;
+  width: 100%;
 }
 @keyframes slide {
   from {
@@ -462,10 +462,9 @@ footer {
     transform: translateX(-88.5%);
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
   .visionImage {
     width: 400px;
-    height: 400px;
     height: 100%;
   }
   .card {
@@ -480,9 +479,9 @@ footer {
     align-items: center !important;
     gap: 50px;
   }
-  .visionImage {
+  /* .visionImage {
     min-width: 400px;
-  }
+  } */
   .vision {
     text-align: center;
   }
